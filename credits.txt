@@ -1,0 +1,23 @@
+**Credits:**
+
+- Bootstrap - http://getbootstrap.com
+- jQuery - http://jquery.com
+- Respond - Authors & copyright (c) 2012: Scott Jehl, Paul Irish, Nicholas Zakas.
+- Pattern - http://subtlepatterns.com/
+- Font awesome icon - http://fortawesome.github.io/Font-Awesome/
+- Photos - http://pixabay.com
+- Animate.css - http://daneden.me/animate
+- Magnific popup - http://dimsemenov.com/plugins/magnific-popup/
+- Owl carousel - http://owlgraphic.com/owlcarousel/
+- Countdown - http://github.com/hilios/jquery.countdown
+- Count To - https://github.com/mhuggins/jquery-countTo
+- Knob - http://anthonyterrien.com/knob/
+- jQuery UI - http://jqueryui.com/
+- Placeholders - http://jamesallardice.github.io/Placeholders.js/
+- Bootstrap Switch - http://www.bootstrap-switch.org
+- HTML5Shiv - https://github.com/aFarkas/html5shiv
+- Flot Charts - http://www.flotcharts.org/
+- Nicescroll - http://nicescroll.areaaperta.com
+- Rate It - http://rateit.codeplex.com
+- Respond js - https://github.com/scottjehl/Respond
+- Sparkline - http://omnipotent.net/jquery.sparkline/

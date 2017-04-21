@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>UI Design</title>
+		<!-- Description, Keywords and Author -->
+		<meta name="description" content="Your description">
+		<meta name="keywords" content="Your,Keywords">
+		<meta name="author" content="ResponsiveWebInc">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<!-- Styles -->
+		<!-- Bootstrap CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<!-- Font awesome CSS -->
+		<link href="css/font-awesome.min.css" rel="stylesheet">
+		
+		
+		<!-- Main CSS -->
+		<link href="css/style-260.css" rel="stylesheet">
+				
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="#">
+	</head>
+	
+	<body>
+	
+		
+		<!-- UI # -->
+		<div class="ui-260">
+		
+			<div class="container">
+				<!-- UI content -->
+				<div class="block-content">
+					<div class="music-player">
+						<!-- Music title -->
+						<h4>Baby One More Time <small>.mp3</small></h4>
+						<!-- Album image -->
+						<img class="img-responsive album" src="img/ui-260/5.jpg" alt="" />
+						<!-- Navigate buttons -->
+						<div class="music-btn">
+							<a href="#"><i class="fa fa-fast-backward side-btn"></i></a>
+							<a href="#"><i class="fa fa-play center-btn"></i></a>
+							<a href="#"><i class="fa fa-fast-forward side-btn"></i></a>
+						</div>
+						<div class="music-timer">
+							<span class="m-time pull-left">02:36 <strong>/ 04:50</strong></span>
+							<span class="m-stuff pull-right">
+								<a href="#"><i class="fa fa-retweet"></i></a> &nbsp;
+								<a href="#"><i class="fa fa-random"></i></a> &nbsp;
+								<a href="#"><i class="fa fa-volume-up"></i></a>
+							</span>
+							<div class="clearfix"></div>
+							<!-- Progress bar -->
+							<div class="progress">
+								<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+								</div>
+							</div>
+						</div>
+							
+						<h2>Play List</h2>
+						<!-- Music play list -->
+						<div class="play-list">
+							<ul class="list-unstyled">
+								<li>
+									<div class="list-item">
+										<!-- Album Image -->
+										<img class="img-responsive" src="img/ui-260/1.jpg" alt="" />
+										<!-- Icon -->
+										<a class="pull-right" href="#"><i class="fa fa-music"></i></a>
+										<h5><a href="#">Baby Doll</a></h5>
+										<span class="sub-text">Singer: Andreas Joe, Size: 5.9MB</span>
+										<div class="clearfix"></div>
+									</div>
+								</li>
+								<li class="active">
+									<div class="list-item">
+										<!-- Album Image -->
+										<img class="img-responsive" src="img/ui-260/5.jpg" alt="" />
+										<!-- Icon -->
+										<a class="pull-right" href="#"><i class="fa fa-music"></i></a>
+										<h5><a href="#">Sare Jaha Se Achha</a></h5>
+										<span class="sub-text">Singer: Lata Mangeskar, Size: 5MB</span>
+										<div class="clearfix"></div>
+									</div>
+								</li>
+								<li>
+									<div class="list-item">
+										<!-- Album Image -->
+										<img class="img-responsive" src="img/ui-260/2.jpg" alt="" />
+										<!-- Icon -->
+										<a class="pull-right" href="#"><i class="fa fa-music"></i></a>
+										<h5><a href="#">Look After You</a></h5>
+										<span class="sub-text">Singer: Justin, Size: 4.03MB</span>
+										<div class="clearfix"></div>
+									</div>
+								</li>
+								<li>
+									<div class="list-item">
+										<!-- Album Image -->
+										<img class="img-responsive" src="img/ui-260/3.jpg" alt="" />
+										<!-- Icon -->
+										<a class="pull-right" href="#"><i class="fa fa-music"></i></a>
+										<h5><a href="#">Look After You</a></h5>
+										<span class="sub-text">Singer: Justin, Size: 4.03MB</span>
+										<div class="clearfix"></div>
+									</div>
+								</li>
+								<li>
+									<div class="list-item">
+										<!-- Album Image -->
+										<img class="img-responsive" src="img/ui-260/4.jpg" alt="" />
+										<!-- Icon -->
+										<a class="pull-right" href="#"><i class="fa fa-music"></i></a>
+										<h5><a href="#">Look After You</a></h5>
+										<span class="sub-text">Singer: Justin, Size: 4.03MB</span>
+										<div class="clearfix"></div>
+									</div>
+								</li>
+								<li>
+									<div class="list-item">
+										<!-- Album Image -->
+										<img class="img-responsive" src="img/ui-260/5.jpg" alt="" />
+										<!-- Icon -->
+										<a class="pull-right" href="#"><i class="fa fa-music"></i></a>
+										<h5><a href="#">Look After You</a></h5>
+										<span class="sub-text">Singer: Justin, Size: 4.03MB</span>
+										<div class="clearfix"></div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		
+		</div>
+		
+		<!-- Javascript files -->
+		<!-- jQuery -->
+		<script src="js/jquery.js"></script>
+		<!-- Bootstrap JS -->
+		<script src="js/bootstrap.min.js"></script>
+		<!-- jQuery nice scroll (For smooth scrolling and scrollbar) -->
+		<script src="js/jquery.nicescroll.min.js"></script>
+		<!-- Placeholder JS -->
+		<script src="js/placeholder.js"></script>
+		<!-- Respond JS for IE8 -->
+		<script src="js/respond.min.js"></script>
+		<!-- HTML5 Support for IE -->
+		<script src="js/html5shiv.js"></script>
+		<script>
+			/* Scroll bar JS */
+
+			$(".play-list").niceScroll({
+				cursorcolor:"#555",
+				cursoropacitymin:0,
+				cursoropacitymax:0.7,
+				cursorwidth:5,
+				cursorborder:"0px",
+				cursorborderradius:"0px",
+				cursorminheight:50,
+				zindex:1,
+				mousescrollstep:20
+			});
+		</script>
+	</body>	
+</html>

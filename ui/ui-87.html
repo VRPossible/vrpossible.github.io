@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>UI Design</title>
+		<!-- Description, Keywords and Author -->
+		<meta name="description" content="Your description">
+		<meta name="keywords" content="Your,Keywords">
+		<meta name="author" content="ResponsiveWebInc">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<!-- Styles -->
+		<!-- Bootstrap CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<!-- Font awesome CSS -->
+		<link href="css/font-awesome.min.css" rel="stylesheet">
+		
+		
+		<!-- Main CSS -->
+		<link href="css/style-87.css" rel="stylesheet">
+				
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="#">
+	</head>
+	
+	<body>
+	
+		
+		<!-- UI - X Starts -->
+		<div class="ui-87">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 col-sm-6 col-xs-6 col-mob">
+						<!-- Item -->
+						<div class="ui-item">
+							<!-- Details -->
+							<div class="ui-details clearfix">
+								<!-- Heading -->
+								<div class="ui-heading">
+									<!-- Small Heading -->
+									<h4><a href="#">Hampden</a></h4>
+									<!-- Big Heading -->
+									<h3 class="red">$1,000</h3>
+								</div>
+								<!-- Number and Arrow -->
+								<a href="#" class="ui-arrow"><span class="bg-red">423 <i class="fa fa-angle-double-up"></i></span></a>
+							</div>
+							<!-- Chart -->
+							<div class="ui-chart">
+								<!-- Bar Chart -->
+								<span class="inlinebar-one">42,13,56,89,10,40,89,70,40,89,76,66,56,88,90</span>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-3 col-sm-6 col-xs-6 col-mob">
+						<!-- Item -->
+						<div class="ui-item">
+							<!-- Details -->
+							<div class="ui-details clearfix">
+								<!-- Heading -->
+								<div class="ui-heading">
+									<!-- Small Heading -->
+									<h4><a href="#">Sydney</a></h4>
+									<!-- Big Heading -->
+									<h3 class="green">$2,000</h3>
+								</div>
+								<!-- Number and Arrow -->
+								<a href="#" class="ui-arrow"><span class="bg-green">345 <i class="fa fa-angle-double-up"></i></span></a>
+							</div>
+							<!-- Chart -->
+							<div class="ui-chart">
+								<!-- Bar Chart -->
+								<span class="inlinebar-two">56,78,23,10,24,58,90,70,88,99,57,39,23,45,56</span>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-3 col-sm-6 col-xs-6 col-mob">
+						<!-- Item -->
+						<div class="ui-item">
+							<!-- Details -->
+							<div class="ui-details clearfix">
+								<!-- Heading -->
+								<div class="ui-heading">
+									<!-- Small Heading -->
+									<h4><a href="#">Finibus</a></h4>
+									<!-- Big Heading -->
+									<h3 class="lblue">$8,000</h3>
+								</div>
+								<!-- Number and Arrow -->
+								<a href="#" class="ui-arrow"><span class="bg-lblue">897 <i class="fa fa-angle-double-up"></i></span></a>
+							</div>
+							<!-- Chart -->
+							<div class="ui-chart">
+								<!-- Bar Chart -->
+								<span class="inlinebar-three">45,66,78,90,34,56,23,10,45,79,90,40,89,78,67</span>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-3 col-sm-6 col-xs-6 col-mob">
+						<!-- Item -->
+						<div class="ui-item">
+							<!-- Details -->
+							<div class="ui-details clearfix">
+								<!-- Heading -->
+								<div class="ui-heading">
+									<!-- Small Heading -->
+									<h4><a href="#">Hampden</a></h4>
+									<!-- Big Heading -->
+									<h3 class="yellow">$9,000</h3>
+								</div>
+								<!-- Number and Arrow -->
+								<a href="#" class="ui-arrow"><span class="bg-yellow">786 <i class="fa fa-angle-double-up"></i></span></a>
+							</div>
+							<!-- Chart -->
+							<div class="ui-chart">
+								<!-- Bar Chart -->
+								<span class="inlinebar-four">56,77,82,81,89,20,46,59,34,37,20,12,32,56,78</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>	
+		</div>
+		<!-- UI - X Ends -->
+		
+		<!-- Javascript files -->
+		<!-- jQuery -->
+		<script src="js/jquery.js"></script>
+		<!-- Bootstrap JS -->
+		<script src="js/bootstrap.min.js"></script>
+		<!-- Sparkline Chart -->
+		<script type="text/javascript" src="js/sparklines.js"></script>
+
+		<!-- Placeholder JS -->
+		<script src="js/placeholder.js"></script>
+		<!-- Respond JS for IE8 -->
+		<script src="js/respond.min.js"></script>
+		<!-- HTML5 Support for IE -->
+		<script src="js/html5shiv.js"></script>
+		<script>
+			<!-- Bar Chart One -->
+			$(".inlinebar-one").sparkline('html', { type: 'bar', height: '80', barColor: '#f75353', barWidth:'12' });
+			<!-- Bar Chart Two -->
+			$(".inlinebar-two").sparkline('html', { type: 'bar', height: '80', barColor: '#51d466', barWidth:'12' });
+			<!-- Bar Chart Three -->
+			$(".inlinebar-three").sparkline('html', { type: 'bar', height: '80', barColor: '#32c8de', barWidth:'12' });
+			<!-- Bar Chart Four -->
+			$(".inlinebar-four").sparkline('html', { type: 'bar', height: '80', barColor: '#fcd419', barWidth:'12' });
+		</script>
+	</body>	
+</html>

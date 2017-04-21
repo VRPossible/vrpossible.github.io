@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>UI Design</title>
+		<!-- Description, Keywords and Author -->
+		<meta name="description" content="Your description">
+		<meta name="keywords" content="Your,Keywords">
+		<meta name="author" content="ResponsiveWebInc">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<!-- Styles -->
+		<!-- Bootstrap CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<!-- Font awesome CSS -->
+		<link href="css/font-awesome.min.css" rel="stylesheet">
+		
+		
+		<!-- Main CSS -->
+		<link href="css/style-261.css" rel="stylesheet">
+				
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="#">
+	</head>
+	
+	<body>
+	
+		
+		<!-- UI - X Starts -->
+		<div class="ui-261">
+			<div class="container-fluid">
+				<!-- Button -->
+				<a href="#" class="ui-btn"><i class="fa fa-angle-double-up"></i></a>
+				<!-- Outer -->
+				<div class="ui-outer">
+					<div class="row">
+						<div class="col-md-2 col-sm-2 col-xs-4 col-mob">
+							<!-- Item -->
+							<a href="#" class="ui-item bg-red">
+								<!-- Heading -->
+								<span><i class="fa fa-android"></i>Android</span>
+							</a>
+						</div>
+						<div class="col-md-2 col-sm-2 col-xs-4 col-mob">
+							<!-- Item -->
+							<a href="#" class="ui-item bg-lblue">
+								<!-- Heading -->
+								<span><i class="fa fa-drupal"></i>Drupal</span>
+							</a>
+						</div>
+						<div class="col-md-2 col-sm-2 col-xs-4 col-mob">
+							<!-- Item -->
+							<a href="#" class="ui-item bg-green">
+								<!-- Heading -->
+								<span><i class="fa fa-dropbox"></i>Dropbox</span>
+							</a>
+						</div>
+						<div class="col-md-2 col-sm-2 col-xs-4 col-mob">
+							<!-- Item -->
+							<a href="#" class="ui-item bg-yellow">
+								<!-- Heading -->
+								<span><i class="fa fa-apple"></i>Apple</span>
+							</a>
+						</div>
+						<div class="col-md-2 col-sm-2 col-xs-4 col-mob">
+							<!-- Item -->
+							<a href="#" class="ui-item bg-purple">
+								<!-- Heading -->
+								<span><i class="fa fa-joomla"></i>Joomla</span>
+							</a>
+						</div>
+						<div class="col-md-2 col-sm-2 col-xs-4 col-mob">
+							<!-- Item -->
+							<a href="#" class="ui-item bg-rose">
+								<!-- Heading -->
+								<span><i class="fa fa-delicious"></i>Delicious</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- UI - X Ends -->
+		
+		<!-- Javascript files -->
+		<!-- jQuery -->
+		<script src="js/jquery.js"></script>
+		<!-- Bootstrap JS -->
+		<script src="js/bootstrap.min.js"></script>
+		<!-- Placeholder JS -->
+		<script src="js/placeholder.js"></script>
+		<!-- Respond JS for IE8 -->
+		<script src="js/respond.min.js"></script>
+		<!-- HTML5 Support for IE -->
+		<script src="js/html5shiv.js"></script>
+		<script>
+			$(document).ready(function(){
+				<!-- Click Event -->
+				$("a.ui-btn").click(function(e){
+					e.preventDefault();
+					<!-- Active -->
+					if(!($(this).next(".ui-outer").hasClass("active"))){
+						$(this).children("i").removeClass("fa-angle-double-up").addClass("fa-angle-double-down");		//Change Icon
+						$(this).next(".ui-outer").addClass("active");		//Add Class Active
+					}
+					else{
+						$(this).children("i").removeClass("fa-angle-double-down").addClass("fa-angle-double-up");		//Change Icon
+						$(this).next(".ui-outer").removeClass("active");	//Remove Class Active	
+					}
+				});
+			});
+		
+		</script>
+	</body>	
+</html>

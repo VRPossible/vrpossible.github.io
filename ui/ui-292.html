@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>UI Design - Brave</title>
+		<!-- Description, Keywords and Author -->
+		<meta name="description" content="Your description">
+		<meta name="keywords" content="Your,Keywords">
+		<meta name="author" content="ResponsiveWebInc">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<!-- Styles -->
+		<!-- Bootstrap CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<!-- Font awesome CSS -->
+		<link href="css/font-awesome.min.css" rel="stylesheet">
+		
+		
+		<!-- Main CSS -->
+		<link href="css/style-292.css" rel="stylesheet">
+				
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="#">
+	</head>
+	
+	<body>
+	
+		
+		<!-- UI - X Starts -->
+		<div class="ui-x">
+			<!-- Menu Button -->
+			<a href="#" class="btn btn-lg btn-lblue">Menu</a>
+			<!-- Navigation -->
+			<div class="ui-nav">
+				<!-- Content -->
+				<div class="ui-content">
+					<!-- Heading -->
+					<h3>Navigation</h3>
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-md-4 col-sm-4 col-xs-4 col-mob">
+								<!-- Item -->
+								<a href="#" class="ui-item"><i class="fa fa-apple bg-red"></i>Apple</a>
+							</div>
+							<div class="col-md-4 col-sm-4 col-xs-4 col-mob">
+								<!-- Item -->
+								<a href="#" class="ui-item"><i class="fa fa-android bg-lblue"></i>Android</a>
+							</div>
+							<div class="col-md-4 col-sm-4 col-xs-4 col-mob">
+								<!-- Item -->
+								<a href="#" class="ui-item"><i class="fa fa-joomla bg-green"></i>Joomla</a>
+							</div>
+							<div class="col-md-4 col-sm-4 col-xs-4 col-mob">
+								<!-- Item -->
+								<a href="#" class="ui-item"><i class="fa fa-linux bg-yellow"></i>Linux</a>
+							</div>
+							<div class="col-md-4 col-sm-4 col-xs-4 col-mob">
+								<!-- Item -->
+								<a href="#" class="ui-item"><i class="fa fa-dropbox bg-blue"></i>DropBox</a>
+							</div>
+							<div class="col-md-4 col-sm-4 col-xs-4 col-mob">
+								<!-- Item -->
+								<a href="#" class="ui-item"><i class="fa fa-drupal bg-purple"></i>Drupal</a>
+							</div>
+							<div class="col-md-4 col-sm-4 col-xs-4 col-mob">
+								<!-- Item -->
+								<a href="#" class="ui-item"><i class="fa fa-delicious bg-rose"></i>Delicious</a>
+							</div>
+							<div class="col-md-4 col-sm-4 col-xs-4 col-mob">
+								<!-- Item -->
+								<a href="#" class="ui-item"><i class="fa fa-slack bg-orange"></i>Slack</a>
+							</div>
+							<div class="col-md-4 col-sm-4 col-xs-4 col-mob">
+								<!-- Item -->
+								<a href="#" class="ui-item"><i class="fa fa-pagelines bg-green"></i>PageLine</a>
+							</div>
+							<div class="col-md-4 col-sm-4 col-xs-4 col-mob">
+								<!-- Item -->
+								<a href="#" class="ui-item"><i class="fa fa-tumblr bg-lblue"></i>Tumblr</a>
+							</div>
+							<div class="col-md-4 col-sm-4 col-xs-4 col-mob">
+								<!-- Item -->
+								<a href="#" class="ui-item"><i class="fa fa-windows bg-purple"></i>Windows</a>
+							</div>
+							<div class="col-md-4 col-sm-4 col-xs-4 col-mob">
+								<!-- Item -->
+								<a href="#" class="ui-item"><i class="fa fa-twitter bg-blue"></i>Twitter</a>
+							</div>
+						</div>
+					</div>					
+					<!-- Close utton -->
+					<a href="#" class="ui-close">x</a>
+				</div>
+			</div>
+		</div>
+		<!-- UI - X Ends -->
+		
+		<!-- Javascript files -->
+		<!-- jQuery -->
+		<script src="js/jquery.js"></script>
+		<!-- Bootstrap JS -->
+		<script src="js/bootstrap.min.js"></script>
+		<!-- Placeholder JS -->
+		<script src="js/placeholder.js"></script>
+		<!-- Respond JS for IE8 -->
+		<script src="js/respond.min.js"></script>
+		<!-- HTML5 Support for IE -->
+		<script src="js/html5shiv.js"></script>
+		<script>
+			<!-- Animation -->
+			$(document).ready(function(){
+				$(".ui-x a.btn").click(function(e){
+					e.preventDefault();
+					$(this).next(".ui-nav").slideDown(300);			// Slide Down 		
+				});
+				$(".ui-x .ui-nav a.ui-close").click(function(e){
+					e.preventDefault();
+					$(".ui-nav").slideUp(300);				// Slide Up	
+				});
+			});
+		</script>
+	</body>	
+</html>

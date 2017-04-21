@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>UI Design</title>
+		<!-- Description, Keywords and Author -->
+		<meta name="description" content="Your description">
+		<meta name="keywords" content="Your,Keywords">
+		<meta name="author" content="ResponsiveWebInc">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<!-- Styles -->
+		<!-- Bootstrap CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<!-- Font awesome CSS -->
+		<link href="css/font-awesome.min.css" rel="stylesheet">
+		
+		
+		<!-- Main CSS -->
+		<link href="css/style-92.css" rel="stylesheet">
+				
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="#">
+	</head>
+	
+	<body>
+	
+		
+		<!-- UI # -->
+		<div class="ui-92">
+		
+			<!-- Status slide box starts -->
+			 <div class="status-slide hidden-xs">
+				  <!-- Slide button -->
+				  <div class="status-button">
+					  <!-- Button text with icon -->
+					  <span class="status-button-arrow bg-red"><i class="fa fa-chevron-left"></i></span> 
+					  <!-- Blue circle -->
+					  <span class="status-circle"><span class="status-circle-blue bg-lblue">58 <i class="fa fa-angle-double-up"></i></span></span>
+				  </div>
+				  <div class="clearfix"></div>
+				  <!-- Content -->
+				  <div class="status-content">
+					  <!-- Status head section with graph -->
+					 <div class="status-head">
+						 <div class="status-head-top">
+							Total Income for last 2 days <span class="label label-lblue pull-right">$500</span>
+						 </div>
+						 <div class="status-head-content bg-lblue">
+							<!-- Graph -->
+							<div class="status-head-left">
+							   <div id="status-chart"></div>
+							</div>
+							<div class="status-head-right">
+							   <table class="table">
+								  <tr>
+									 <td>Server Load</td>
+									 <td>1.22 GHz</td>
+								  </tr>
+								  <tr>
+									 <td>Database</td>
+									 <td>4/10</td>
+								  </tr>
+								  <tr>
+									 <td>Domains</td>
+									 <td>5/2/3</td>
+								  </tr>
+								  <tr>
+									 <td>Bandwidth</td>
+									 <td>5000 GB</td>
+								  </tr>
+							   </table>
+							</div>
+							<div class="clearfix"></div>
+						 </div>
+					 </div>
+					 <!-- Status body -->
+					 <div class="status-body text-center">
+						 <!-- Three columns -->
+						 <div class="status-body-left">
+							<!-- Label -->
+							<div class="label label-green"><i class="fa fa-angle-double-up"></i> 50%</div><br />
+							<!-- Name -->
+							Income    
+						 </div>
+						 <div class="status-body-center">
+							<div class="label label-red"><i class="fa fa-angle-double-up"></i> 30%</div><br />
+							Stocks    
+						 </div>
+						 <div class="status-body-right">
+							<div class="label label-orange"><i class="fa fa-angle-double-down"></i> 25%</div><br />
+							Project
+						 </div>
+						 <div class="clearfix"></div>
+					 </div>
+				  </div>
+				  
+			 </div>
+			 <!-- Status slide box ends -->    
+		
+		</div>
+		
+		<!-- Javascript files -->
+		<!-- jQuery -->
+		<script src="js/jquery.js"></script>
+		<!-- Bootstrap JS -->
+		<script src="js/bootstrap.min.js"></script>
+		<!-- Sparkline JS -->
+		<script src="js/sparklines.js"></script>
+		<!-- Placeholder JS -->
+		<script src="js/placeholder.js"></script>
+		<!-- Respond JS for IE8 -->
+		<script src="js/respond.min.js"></script>
+		<!-- HTML5 Support for IE -->
+		<script src="js/html5shiv.js"></script>
+		
+		<script>
+		
+		
+			<!-- Sparkline -->
+			$("#status-chart").sparkline([20,23,25,19,20,19,18,17,16,20,18,17,19,23,25,19,22,25], {
+			type: 'bar',
+			height: '70',
+			barColor: 'rgba(255,255,255,1)'});    
+			
+			/* Status slide */
+
+			$('.status-button').click(function() {
+				var $slidebtn=$(this);
+				var $slidebox=$(this).parent();
+				if($slidebox.css('right')=="-282px"){
+				  $slidebox.animate({
+					right:0
+				  },500);
+				  $slidebtn.find(".status-circle").hide();
+				  $slidebtn.width(41);
+				  $slidebtn.animate({
+					 left:-42
+				  },100);
+				  $slidebtn.children().children("i").removeClass().addClass("fa fa-chevron-right");
+				}
+				else{
+				  $slidebox.animate({
+					right:-282
+				  },100);
+				  $slidebtn.animate({
+					 left:-120
+				  },500);
+				  $slidebtn.width(120);
+				  $slidebtn.find(".status-circle").show(700);
+				  $slidebtn.children().children("i").removeClass().addClass("fa fa-chevron-left");
+				}
+			});  
+			
+		</script>
+		
+	</body>	
+</html>

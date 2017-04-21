@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>UI Design</title>
+		<!-- Description, Keywords and Author -->
+		<meta name="description" content="Your description">
+		<meta name="keywords" content="Your,Keywords">
+		<meta name="author" content="ResponsiveWebInc">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<!-- Styles -->
+		<!-- Bootstrap CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<!-- Font awesome CSS -->
+		<link href="css/font-awesome.min.css" rel="stylesheet">
+		
+		
+		<!-- Main CSS -->
+		<link href="css/style-188.css" rel="stylesheet">
+				
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="#">
+	</head>
+	
+	<body>
+	
+		
+		<!-- UI X -->
+		<div class="ui-188">
+			<div class="container-fluid">
+				<div class="row">	
+					<div class="col-md-3 col-sm-3">
+						<!-- Using Border -->
+						<div class="ui-item">
+							<div class="item-head br-red">
+								<!-- Countdown Timer -->
+								<h5 class="timer" data-from="0" data-to="19" data-speed="500" data-refresh-interval="5"></h5>
+							</div>
+							<!-- Number Heading -->
+							<h4>Visitors</h4>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-3">
+						<div class="ui-item">
+							<div class="item-head br-green">
+								<h5 class="timer" data-from="0" data-to="29" data-speed="2300" data-refresh-interval="50"></h5>
+							</div>
+							<h4>Downloads</h4>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-3">
+						<div class="ui-item">
+							<div class="item-head br-lblue">
+								<h5 class="timer" data-from="0" data-to="39" data-speed="2300" data-refresh-interval="50"></h5>
+							</div>
+							<h4>Incomes</h4>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-3">
+						<div class="ui-item">
+							<div class="item-head br-orange">
+								<h5 class="timer" data-from="0" data-to="49" data-speed="2300" data-refresh-interval="50"></h5>
+							</div>
+							<h4>Pageviews</h4>
+						</div>
+					</div>
+				</div>
+				<div class="row">	
+					<div class="col-md-3 col-sm-3">
+						<div class="ui-item">
+							<div class="item-head br-blue">
+								<h5 class="timer" data-from="0" data-to="59" data-speed="2300" data-refresh-interval="50"></h5>
+							</div>
+							<h4>Bournce Rate</h4>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-3">
+						<div class="ui-item">
+							<div class="item-head br-yellow">
+								<h5 class="timer" data-from="0" data-to="69" data-speed="2300" data-refresh-interval="50"></h5>
+							</div>
+							<h4>Growth</h4>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-3">
+						<div class="ui-item">
+							<div class="item-head br-rose">
+								<h5 class="timer" data-from="0" data-to="65" data-speed="2300" data-refresh-interval="50"></h5>
+							</div>
+							<h4>Uploads</h4>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-3">
+						<div class="ui-item">
+							<div class="item-head br-purple">
+								<h5 class="timer" data-from="0" data-to="32" data-speed="2300" data-refresh-interval="50"></h5>
+							</div>
+							<h4>Hits</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Javascript files -->
+		<!-- jQuery -->
+		<script src="js/jquery.js"></script>
+		<!-- Bootstrap JS -->
+		<script src="js/bootstrap.min.js"></script>
+		<!-- Count to JS -->
+		<script src="js/jquery.countTo.js"></script>
+		<!-- Placeholder JS -->
+		<script src="js/placeholder.js"></script>
+		<!-- Respond JS for IE8 -->
+		<script src="js/respond.min.js"></script>
+		<!-- HTML5 Support for IE -->
+		<script src="js/html5shiv.js"></script>
+		
+		<script>
+			$(document).ready(function(){	
+				var item = $(".ui-188 h5");
+				if(!item.hasClass("finish"))
+				{
+					item.countTo();
+					item.addClass('finish');
+				}
+			});	
+		</script>
+		
+	</body>	
+</html>

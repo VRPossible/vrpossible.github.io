@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>UI Design - Brave</title>
+		<!-- Description, Keywords and Author -->
+		<meta name="description" content="Your description">
+		<meta name="keywords" content="Your,Keywords">
+		<meta name="author" content="ResponsiveWebInc">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<!-- Styles -->
+		<!-- Bootstrap CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<!-- Font awesome CSS -->
+		<link href="css/font-awesome.min.css" rel="stylesheet">
+		
+		
+		<!-- Main CSS -->
+		<link href="css/style-273.css" rel="stylesheet">
+				
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="#">
+	</head>
+	
+	<body>
+	
+		
+		<!-- UI - X Starts -->
+		<div class="ui-273">
+			<!-- Table Responsive -->
+			<div class="table-responsive">
+				<!-- Table -->
+				<table class="table table-bordered">
+					<!-- Table Heading -->
+					<tr>
+						<!-- CheckBox -->
+						<th><a href="#" class="ui-check"><i class="fa fa-check"></i></a></th>
+						<!-- Name -->
+						<th>Name</th>
+						<!-- Date Of Birth -->
+						<th>DOB</th>
+						<!-- Location -->
+						<th>Location</th>
+					</tr>
+					<!-- Table Data -->
+					<tr>
+						<!-- CheckBox -->
+						<td><a href="#" class="ui-check"><i class="fa fa-check"></i></a></td>
+						<!-- Name -->
+						<td>Angelina</td>
+						<!-- Date Of Birth -->
+						<td>12/06/1987</td>
+						<!-- Location -->
+						<td>Bangalore</td>
+					</tr>
+					<tr>
+						<!-- CheckBox -->
+						<td><a href="#" class="ui-check"><i class="fa fa-check"></i></a></td>
+						<!-- Name -->
+						<td>Max</td>
+						<!-- Date of Birth -->
+						<td>06/04/1890</td>
+						<!-- Location -->
+						<td>Chennai</td>
+					</tr>
+					<tr>
+						<!-- CheckBox -->
+						<td><a href="#" class="ui-check"><i class="fa fa-check"></i></a></td>
+						<!-- Name -->
+						<td>Jennifer</td>
+						<!-- Date Of Birth -->
+						<td>23/05/1995</td>
+						<!-- Location -->
+						<td>Mumbai</td>
+					</tr>
+					<tr>
+						<!-- ChevkBox -->
+						<td><a href="#" class="ui-check"><i class="fa fa-check"></i></a></td>
+						<!-- Name -->
+						<td>Joseph</td>
+						<!-- Date Of Birth -->
+						<td>30/08/1965</td>
+						<!-- Location -->
+						<td>Orissa</td>
+					</tr>
+					<tr>
+						<!-- CheckBox -->
+						<td><a href="#" class="ui-check"><i class="fa fa-check"></i></a></td>
+						<!-- Name -->
+						<td>Staffy</td>
+						<!-- Date Of Birth -->
+						<td>15/04/1974</td>
+						<!-- Location -->
+						<td>Delhi</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<!-- UI - X Ends -->
+		
+		<!-- Javascript files -->
+		<!-- jQuery -->
+		<script src="js/jquery.js"></script>
+		<!-- Bootstrap JS -->
+		<script src="js/bootstrap.min.js"></script>
+		<!-- Placeholder JS -->
+		<script src="js/placeholder.js"></script>
+		<!-- Respond JS for IE8 -->
+		<script src="js/respond.min.js"></script>
+		<!-- HTML5 Support for IE -->
+		<script src="js/html5shiv.js"></script>
+		<script>
+			$(document).ready(function(){
+				<!-- On Click Event -->
+				$("tr > th > a.ui-check").click(function(e){
+					e.preventDefault();
+					if(!($(this).parents("tr").hasClass("active"))){	
+						$("a.ui-check").children("i").addClass("lblue");	// Add Class
+						$("tr").addClass("active");			// Add Class				
+					}
+					else{
+						$("a.ui-check").children("i").removeClass("lblue");		// Remove Class
+						$("tr").removeClass("active");			// Remove Class
+					}
+				});
+				<!-- On Click Event -->
+				$("tr > td > a.ui-check").click(function(e){
+					e.preventDefault();
+					<!-- For Each Clicked CheckBox -->
+					$(this).each(function(){
+						if(!($(this).parents("tr").hasClass("active"))){
+							$(this).children("i").addClass("lblue");		// Add Class
+							$(this).parents("tr").addClass("active");		// Add Class	
+						}	
+						else{
+							$(this).children("i").removeClass("lblue");			// Remove Class
+							$(this).parents("tr").removeClass("active");		// Remove Class
+						}				
+					});
+				});
+			
+			});
+		</script>
+	</body>	
+</html>

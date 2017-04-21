@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Title here -->
+		<title>Documentation</title>
+		<!-- Description, Keywords and Author -->
+		<meta name="description" content="Your description">
+		<meta name="keywords" content="Your,Keywords">
+		<meta name="author" content="ResponsiveWebInc">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<!-- Styles -->
+		<!-- Bootstrap CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<!-- Font awesome CSS -->
+		<link href="css/font-awesome.min.css" rel="stylesheet">		
+		<!-- Custom CSS -->
+		<link href="css/style.css" rel="stylesheet">
+		
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="#">
+	</head>
+	
+	<body>
+
+		
+		<div class="container">
+			<div class="main">
+				<div class="row">
+					<div class="col-md-2">
+					
+						<div class="sidebar">
+							<!-- Project name -->
+							<h3>Brave UI</h3>
+							<ul>
+								<li><a href="#home">Home</a></li>
+								<li><a href="#browser">Browser Issues</a></li>
+								<li><a href="#files">File Structure</a></li>
+								<li><a href="#editing">Editing</a></li>
+								<li><a href="#add-colors">Add Colors</a></li>
+								<li><a href="#fonts">Fonts & Icons</a></li>
+								<li><a href="#elements">Elements</a></li>
+								<li><a href="#how">How to use?</a></li>
+							</ul>
+						</div>
+						
+					</div>
+					<div class="col-md-10">
+					
+						<div class="mainbar">
+						
+						
+						
+							<!-- Home -->
+							<h3 id="home">Documentation Overview</h3>
+								
+								<p>To edit this theme, basic knowledge about HTML, CSS, JS & Bootstrap is required. You can learn HTML, CSS and JS from <a href="http://www.w3schools.com/">W3Schools</a>. You can learn Bootstrap by visiting <a href="http://getbootstrap.com/">official site</a>.</p>
+								
+								<p>All components used in the theme are well commented. If you like to use any component then open the HTML file and refer the code.</p>
+								
+								<div class="alert alert-danger"><strong>Note:</strong> Before you make any changes, take a backup of all files and folders.</div>
+							
+								
+							<hr />
+							
+							<!-- Browser Issues -->
+							<h3 id="browser">Browser Issues</h3>
+								
+								<p>All UI Components works great on all latest browsers. As for old IE browser, there is no support for <code>IE 6, IE 7, IE 8</code>. As for IE 9 most of the designs works fine, except few designs namely - <code>80,89,244,266</code>. There may be some more designs which won't be working perfectly on IE 9. And IE 9 don't support latest CSS3 properties namely animation, transition, box shaodow, etc., So if any designs uses any CSS3 properties then it won't be working on IE9. Other than these, there will be some issues in layout, forms, etc., in IE9.</p>
+								
+							<hr />
+							
+
+
+<!----------------------------------------------------------------------------------------------------------->														
+							
+							
+							
+							<!-- File structure -->
+							<h3 id="files">File Structure</h3>
+							
+								<p>Theme consists of 3 main folders namely <em>css, img & js</em>. <br />
+								Inside <em>css</em> folder you will find styles used in this theme. <em>style-X.css</em> (X denotes number) is the main stylesheet. <br />
+								Inside <em>img</em> folder you will find all images used in the theme.<br />
+								Inside <em>js</em> folder you will find all Javascript files. 
+								There are somemore folders, which includes files for some plugins.
+								</p>
+							
+							<hr />
+							
+
+
+<!----------------------------------------------------------------------------------------------------------->		
+
+					
+
+							
+							
+							<!-- Editing -->
+							<h3 id="editing">Editing</h3>
+							
+								<p>To edit files you need any code editor. I recommend using Notepad++.</p>
+								
+								<strong>Add Custom Styles</strong>
+								<p>To add custom styles, create new style sheet in <em>css</em> folder. Include the style file before the closing tag of <code>&lt;head&gt;</code>. Make sure that you are including this new file after <em>style-X.css</em> (X denotes number).</p>
+								<p>If you want to add any extra CSS files, copy the file to <em>css</em> folder and link it before <em>style-X.css</em> (X denotes number).</p>
+								
+								<pre>
+&lt;link href=&quot;css/FILE-NAME.css&quot; rel=&quot;stylesheet&quot;&gt;									
+								</pre>
+								
+								<hr />
+								
+								<strong>Add Custom JavaScript</strong>
+								<p>To add JS, just create a new java script file in <em>js</em> folder. Include the newly created js file before the closing tag of <code>&lt;body&gt;</code>. Alternatively you can also include Javascript code directly to the html file by enclosing the code in <code>&lt;script&gt; ...your code... &lt;/script&gt;</code> and adding this above the closing tag of <code>&lt;body&gt;</code></p>
+								<p>If you want to add any extra JS files, copy the file to <em>js</em> folder and link it before <em>custom.js</em>.</p>
+
+								<pre>
+&lt;script src=&quot;js/FILE-NAME.js&quot;&gt;&lt;/script&gt;								
+								</pre>
+							
+								<hr />
+								
+								<strong>Editing HTML</strong>
+								<p>Almost all html codes in this theme are neatly commented. All you need to do is to read the comment and modify the content based on your need.</p>
+								
+								<hr />
+								
+<!----------------------------------------------------------------------------------------------------------->								
+
+
+							<!-- Add Colors -->
+							<!-- XXXXXXXXXXXXXXXXX -->
+							<!-- If the theme don't support multiple colors, remove this block -->
+							<h3 id="add-colors">Add Colors</h3>
+							
+								<p>This theme supports some multiple colors which you can add to texts and backgrounds. Here are the list of colors which this theme supports.</p>
+								<p><strong>White, Grey, Black, Red, Light Blue (lblue), Blue, Green, Orange, Purple, Yellow, Rose, Brown.</strong></p>
+
+								<p>Add color to the text, specify color name to the <em>class</em> - <code>&lt;span class="lblue"&gt; ...Some Text... &lt;/span&gt;</code></p>
+								
+								<p>Add color to the background, specify color name along with the prefix <em>bg-</em> to the <em>class</em> - <code>&lt;span class="bg-lblue"&gt; ...Some Text... &lt;/span&gt;</code></p>
+
+								<hr />
+								
+<!----------------------------------------------------------------------------------------------------------->
+														
+			
+							<!-- Fonts -->
+							<h3 id="fonts">Fonts</h3>
+							
+								<p>This theme uses <a href="http://fortawesome.github.io/Font-Awesome/">Font Awesome Icons</a> for Icons and <a href="http://www.google.com/fonts">Google Web Fonts</a> for Fonts.</p>
+								
+								<!-- Icon font -->
+								<strong>Icon Font</strong>
+								<p>Refer <a href="http://fortawesome.github.io/Font-Awesome/">Font Awesome Icons</a> for list of fonts. To use any fonts in the theme, you need to use the following code.</p>
+								
+								<pre>
+/* Latest version */
+&lt;i class=&quot;fa fa-XXXX&quot;&gt;&lt;/i&gt;
+								</pre>
+								
+								
+								<hr />
+								
+								
+								<!-- Web Font -->
+								<strong>Web Font</strong>
+								<p>This theme uses <em>Open Sans</em>. To add or change font visit <a href="http://www.google.com/fonts">Google Web Fonts</a>, Choose the font, Copy the <em>@import</em> code. Paste it in top of your <em>stylesheet</em>.</p>
+								
+								<pre>
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:300,400italic,400,600');
+								</pre>
+							
+								<hr />
+							
+							
+							
+<!----------------------------------------------------------------------------------------------------------->	
+
+							
+							
+<!----------------------------------------------------------------------------------------------------------->
+
+
+							
+
+<!----------------------------------------------------------------------------------------------------------->
+
+
+							<h3 id="elements">Elements</h3>
+							<p>This theme supports multiple colors namely <em>white, grey, black, red, green, lblue, blue, orange, yellow, purple, rose, brown</em>. You can use the above colors in buttons, highlights, badges, text colors, background colors, labels, progress bar, panels, border, etc., If you like to use the default theme color, then you need to use the word <em>color</em>.</p>
+							
+							
+							<table class="table table-bordered">
+								<tr>
+									<th>#</th>
+									<th>Component</th>
+									<th>Code</th>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>Text colors</td>
+									<td>Use class <code>white, grey, black, red, green, lblue, blue, orange, yellow, purple, rose, brown</code>.</td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td>Background colors</td>
+									<td>Use the class <code>bg-xxx</code> (xxx denotes white, grey, black, red, green, lblue, blue, orange, yellow, purple, rose, brown).</td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td>Border colors</td>
+									<td>Use the class <code>br-xxx</code> (xxx denotes white, grey, black, red, green, lblue, blue, orange, yellow, purple, rose, brown).</td>
+								</tr>
+								<tr>
+									<td>4</td>
+									<td>Button colors</td>
+									<td>Use the class <code>btn btn-xxx</code>. Use the above mentioned color names for xxx.</td>
+								</tr>
+								<tr>
+									<td>5</td>
+									<td>Label</td>
+									<td>Same as button for colors (<code>label-xxx</code>). You can also use <code>label-xs, label-sm, label-lg</code> for sizes.</td>
+								</tr>
+								<tr>
+									<td>6</td>
+									<td>Badge</td>
+									<td>Like button you can also use colors for badges using the class <code>badge-xxx</code> (xxx denotes colors).</td>
+								</tr>
+							</table>
+							
+							<hr />
+							
+							
+							
+
+
+							<!-- How to use? -->
+							<h3 id="how">How to use?</h3>
+								<p>Using my UI components are very easy. Here are simple steps you need to follow.</p>
+								
+								<ul>
+									<li>First open the HTML file <code>ui-x.html</code> (x denotes number).</li>
+									<li>Go to <em>css</em> folder and open the <code>style-x.css</code> (x denotes same number as above).</li>
+									<li>Copy the HTML code inside <code>body</code> tag to your project.</li>
+									<li>Copy the <code>style-x.css</code> file to your project.</li>
+									<li>In HTML see if there is any new plugins included. You can do that by checking <code>head</code> section and bottom of the <code>body</code> section. The default <code>css</code> files are <em>bootstrap.min.css, font-awesome.min.css, style-x.css</em> and default <code>js</code> files are <em>jquery.js, bootstrap.min.js, placeholder.js, respond.min.js, html5shiv.js</em>. If there is anyother files other than above said CSS and JS files, then it means some extra plugins are needed for the UI. You need to copy correct CSS or JS files from CSS and JS folder to your project.</li>
+									<li>If plugins are being used in UI Design, then go to the bottom of the page and check if there is any <code>JS</code> code. Most of the plugins need some <code>JS</code> code to make it work. You also need to copy that to your project.</li>
+									<li>While you are including, you may face some problems in layout. You can easily fix them by going through HTML and CSS.</li>
+								</ul>
+								
+								<hr />
+							
+						
+<!----------------------------------------------------------------------------------------------------------->
+
+
+							
+							<!-- XXXXXXXXXXXXXXXXXXXX -->
+							<!-- Remove the plugins which are not used in this theme -->
+							<!-- Plugins used -->
+							<h3 id="plugins">Plugins</h3>
+							
+								<p>This theme uses following plugins. To customize the plugins, you need to refer the official Plugin documentation found in below links.</p>
+								<ul>
+									<li>Bootstrap - <a href="http://getbootstrap.com">http://getbootstrap.com</a></li>
+									<li>jQuery - <a href="http://jquery.com">http://jquery.com</a></li>
+									<li>Font awesome icon - <a href="http://fortawesome.github.io/Font-Awesome/">http://fortawesome.github.io/Font-Awesome/</a></li>
+									<li>Animate.css - <a href="http://daneden.me/animate">http://daneden.me/animate</a></li>
+									<li>Magnific popup - <a href="http://dimsemenov.com/plugins/magnific-popup/">http://dimsemenov.com/plugins/magnific-popup/</a></li>
+									<li>Owl carousel - <a href="http://owlgraphic.com/owlcarousel/">http://owlgraphic.com/owlcarousel/</a></li>
+									<li>Countdown - <a href="http://github.com/hilios/jquery.countdown">http://github.com/hilios/jquery.countdown</a></li>
+									<li>Count To - <a href="https://github.com/mhuggins/jquery-countTo">https://github.com/mhuggins/jquery-countTo</a></li>
+									<li>Knob - <a href="http://anthonyterrien.com/knob/">http://anthonyterrien.com/knob/</a></li>
+									<li>jQuery UI - <a href="http://jqueryui.com/">http://jqueryui.com/</a></li>
+									<li>Placeholders - <a href="http://jamesallardice.github.io/Placeholders.js/">http://jamesallardice.github.io/Placeholders.js/</a></li>
+									<li>Bootstrap Switch - <a href="http://www.bootstrap-switch.org">http://www.bootstrap-switch.org</a></li>
+									<li>HTML5Shiv - <a href="https://github.com/aFarkas/html5shiv">https://github.com/aFarkas/html5shiv</a></li>
+									<li>Flot Charts - <a href="http://www.flotcharts.org/">http://www.flotcharts.org/</a></li>
+									<li>Nestable - <a href="http://dbushell.github.io/Nestable/">http://dbushell.github.io/Nestable/</a></li>
+									<li>Nicescroll - <a href="http://nicescroll.areaaperta.com">http://nicescroll.areaaperta.com</a></li>
+									<li>Respond js - <a href="https://github.com/scottjehl/Respond">https://github.com/scottjehl/Respond</a></li>
+									<li>Sparkline - <a href="http://omnipotent.net/jquery.sparkline/">http://omnipotent.net/jquery.sparkline/</a></li>
+								</ul>
+							
+							
+<!----------------------------------------------------------------------------------------------------------->														
+							
+							
+							<!-- Changelog 
+							<h3 id="changelog">Changelog</h3>
+							
+								<strong>Version 1.0:</strong>
+								<ul>
+									<li>Initial Release.</li>
+								</ul>
+							-->
+							
+							
+						</div>
+						
+					</div>
+				</div>
+			</div>
+			<br />
+			<div class="footer text-center">
+				Copyright 2013 - <a href="http://responsivewebinc.com">Responsive Web Inc</a>
+			</div>
+		</div>
+		
+		
+		<!-- Javascript files -->
+		<!-- jQuery -->
+		<script src="js/jquery.js"></script>
+		<!-- Bootstrap JS -->
+		<script src="js/bootstrap.min.js"></script>
+		<!-- Respond JS for IE8 -->
+		<script src="js/respond.min.js"></script>
+		<!-- HTML5 Support for IE -->
+		<script src="js/html5shiv.js"></script>
+		<!-- Custom JS -->
+		<script src="js/custom.js"></script>
+	</body>	
+</html>

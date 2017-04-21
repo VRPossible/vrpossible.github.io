@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>UI Design</title>
+		<!-- Description, Keywords and Author -->
+		<meta name="description" content="Your description">
+		<meta name="keywords" content="Your,Keywords">
+		<meta name="author" content="ResponsiveWebInc">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<!-- Styles -->
+		<!-- Bootstrap CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<!-- Font awesome CSS -->
+		<link href="css/font-awesome.min.css" rel="stylesheet">
+		
+		
+		<!-- Main CSS -->
+		<link href="css/style-94.css" rel="stylesheet">
+				
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="#">
+	</head>
+	
+	<body>
+	
+		
+		<!-- UI # -->
+		
+		<div class="ui-94">
+			<div class="container">
+				<!-- Navigation Menu Start -->
+				<div class="navigation">
+					<div class="row">
+						<!-- Navigation Menu Link Lists -->
+						<div class="col-md-3 col-sm-4 col-xs-6 col">
+							<div class="menu">
+								<span class="bg-lblue"><i class="fa fa-desktop"></i> &nbsp; Design</span>
+								<div class="menu-list">
+									<ul>
+										<li><a href="service.html"><i class="fa fa-gear red"></i> Service</a></li>
+										<li><a href="features.html"><i class="fa fa-check-square-o lblue"></i> Features</a></li>
+										<li><a href="aboutus.html"><i class="fa fa-user green"></i> About Us</a></li>
+										<li><a href="gallery.html"><i class="fa fa-picture-o orange"></i> Gallery</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-4 col-xs-6 col">
+							<div class="menu">
+								<span class="bg-green"><i class="fa fa-cloud"></i> &nbsp; Graphics</span>
+								<div class="menu-list">
+									<ul>
+										<li><a href="portfolio.html"><i class="fa fa-camera green"></i> Portfolio</a></li>
+										<li><a href="blog.html"><i class="fa fa-comments-o blue"></i> Blog Page</a></li>
+										<li><a href="pricing.html"><i class="fa fa-table red"></i> Pricing Table</a></li>
+										<li><a href="comingsoon.html"><i class="fa fa-times lblue"></i> Coming Soon</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-4 col-xs-6 col">
+							<div class="menu">
+								<span class="bg-orange"><i class="fa fa-gift"></i> &nbsp; Captcha</span>
+								<div class="menu-list">
+									<ul>
+										<li><a href="faq.html"><i class="fa fa-question red"></i> FAQ</a></li>
+										<li><a href="careers.html"><i class="fa fa-briefcase lblue"></i> Careers</a></li>
+										<li><a href="testimonials.html"><i class="fa fa-group yellow"></i> Testimonials</a></li>
+										<li><a href="support.html"><i class="fa fa-envelope orange"></i> Support</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-4 col-xs-6 col">
+							<div class="sform bg-white">
+								<span><i class="fa fa-envelope lblue"></i> &nbsp; Subscription</span>
+								<div class="form">
+									<form role="form">
+										<div class="form-group">
+											<input type="text" class="form-control" placeholder="Enter your Name">
+											<input type="email" class="form-control" placeholder="Enter your E-mail">
+											<button type="button" class="btn btn-lblue btn-sm">Subscribe</button>
+											<button type="button" class="btn btn-white btn-sm">Reset</button>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Navigation menu end -->
+		</div>
+		<!-- Navigation Menu Button -->
+		<div class="menu-btn">
+			<a href="#" class="bg-red">Menu <i class="fa fa-chevron-down"></i></a>
+		</div>
+		
+		<!-- Javascript files -->
+		<!-- jQuery -->
+		<script src="js/jquery.js"></script>
+		<!-- Bootstrap JS -->
+		<script src="js/bootstrap.min.js"></script>
+		<!-- Placeholder JS -->
+		<script src="js/placeholder.js"></script>
+		<!-- Respond JS for IE8 -->
+		<script src="js/respond.min.js"></script>
+		<!-- HTML5 Support for IE -->
+		<script src="js/html5shiv.js"></script>
+		
+		<script>
+		
+			/* Menu Slide JS  */
+
+			$(document).ready(function(){
+				$(".menu-btn").on('click',function(e){
+				  e.preventDefault();
+					
+					//Check this block is open or not..
+				  if(!$(this).prev().hasClass("open")) {
+					$(".ui-94").slideDown(400);
+					$(".ui-94").addClass("open");
+					$(this).find("i").removeClass().addClass("fa fa-chevron-up");
+				  }
+				  
+				  else if($(this).prev().hasClass("open")) {
+					$(".ui-94").removeClass("open");
+					$(".ui-94").slideUp(400);
+					$(this).find("i").removeClass().addClass("fa fa-chevron-down");
+				  }
+				});
+			}); 
+		
+		</script>
+		
+	</body>	
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>UI Design</title>
+		<!-- Description, Keywords and Author -->
+		<meta name="description" content="Your description">
+		<meta name="keywords" content="Your,Keywords">
+		<meta name="author" content="ResponsiveWebInc">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<!-- Styles -->
+		<!-- Bootstrap CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<!-- Font awesome CSS -->
+		<link href="css/font-awesome.min.css" rel="stylesheet">
+		
+		
+		<!-- Main CSS -->
+		<link href="css/style-258.css" rel="stylesheet">
+				
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="#">
+	</head>
+	
+	<body>
+	
+		
+		<!-- UI - X Starts -->
+		<div class="ui-258">
+			<!-- Icon -->	
+			<div class="ui-icon bg-lblue">
+				<!-- Android -->
+				<a href="#" class="ui-tooltip" data-toggle="tooltip" data-placement="left" title="Android"><i class="fa fa-android"></i></a>
+			</div>
+			<!-- Icon -->
+			<div class="ui-icon bg-lblue">
+				<!-- Apple -->
+				<a href="#" class="ui-tooltip" data-toggle="tooltip" data-placement="left" title="Apple"><i class="fa fa-apple"></i></a>
+			</div>
+			<!-- Icon -->
+			<div class="ui-icon bg-lblue">
+				<!-- DropBox -->
+				<a href="#" class="ui-tooltip" data-toggle="tooltip" data-placement="left" title="DropBox"><i class="fa fa-dropbox"></i></a>
+			</div>
+			<!-- Icon -->
+			<div class="ui-icon bg-lblue">
+				<!-- Drupal -->
+				<a href="#" class="ui-tooltip" data-toggle="tooltip" data-placement="left" title="Drupal"><i class="fa fa-drupal"></i></a>
+			</div>
+			<!-- Icon -->
+			<div class="ui-icon bg-lblue">
+				<!-- Linux -->
+				<a href="#" class="ui-tooltip" data-toggle="tooltip" data-placement="left" title="Linux"><i class="fa fa-linux"></i></a>
+			</div>
+			<!-- Button -->
+			<a href="#" class="ui-btn bg-lblue">+</a>
+		</div>
+		<!-- UI - X Ends -->
+		
+		<!-- Javascript files -->
+		<!-- jQuery -->
+		<script src="js/jquery.js"></script>
+		<!-- Bootstrap JS -->
+		<script src="js/bootstrap.min.js"></script>
+		<!-- Placeholder JS -->
+		<script src="js/placeholder.js"></script>
+		<!-- Respond JS for IE8 -->
+		<script src="js/respond.min.js"></script>
+		<!-- HTML5 Support for IE -->
+		<script src="js/html5shiv.js"></script>
+		<script>
+			<!-- Tooltip -->
+			$(function () {
+				$('.ui-tooltip').tooltip();
+			});
+			<!-- Animation -->
+			$(document).ready(function(){
+				$("a.ui-btn").click(function(e){
+					e.preventDefault();
+					if(!($(this).hasClass("active"))){
+						$(this).addClass("active");
+						$(this).parent(".ui-258").addClass("active");
+					}
+					else{						
+						$(this).removeClass("active");
+						$(this).parent(".ui-258").removeClass("active");
+					}
+				});
+			});
+		</script>
+	</body>	
+</html>

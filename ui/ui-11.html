@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>UI Design</title>
+		<!-- Description, Keywords and Author -->
+		<meta name="description" content="Your description">
+		<meta name="keywords" content="Your,Keywords">
+		<meta name="author" content="ResponsiveWebInc">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<!-- Styles -->
+		<!-- Bootstrap CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<!-- Font awesome CSS -->
+		<link href="css/font-awesome.min.css" rel="stylesheet">
+		
+		
+		<!-- Main CSS -->
+		<link href="css/style-11.css" rel="stylesheet">
+				
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="#">
+	</head>
+	
+	<body class="bg-lblue">
+	
+		
+		<!-- UI - X Starts -->
+		<div class="ui-11">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-sm-6 col-xs-12">
+						<!-- UI Item One Starts -->
+						<div class="ui-item-one">
+							<!-- UI Icons -->
+							<a href="#" data-toggle="tooltip" data-placement="top" title="Wifi"><i class="fa fa-wifi"></i></a>
+							<a href="#" data-toggle="tooltip" data-placement="top" title="Sound"><i class="fa fa-bullhorn"></i></a>
+							<a href="#" data-toggle="tooltip" data-placement="top" title="Brightness"><i class="fa fa-adjust"></i></a>
+							<a href="#" data-toggle="tooltip" data-placement="top" title="Flash"><i class="fa fa-bolt"></i></a>
+							<a href="#" data-toggle="tooltip" data-placement="top" title="Location"><i class="fa fa-location-arrow"></i></a>
+							<a href="#" data-toggle="tooltip" data-placement="top" title="Aeroplane mode"><i class="fa fa-plane"></i></a>
+							<!-- UI DropDown -->
+							<div class="ui-dropdown">
+								<a href="" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-angle-down angle"></i></a>
+									<ul class="dropdown-menu">
+										<li><a href="#" class="enabled">Enable All</a></li>
+										<li><a href="#" class="disabled">Disable All</a></li>
+									</ul>
+							</div>	
+						</div>
+						<!-- UI Item One Ends -->
+					</div>
+					<div class="col-md-6 col-sm-6 col-xs-12">
+						<!-- UI Item Two Starts -->
+						<div class="ui-item-two">
+							<!-- UI Icons -->
+							<a href="#" data-toggle="tooltip" data-placement="top" title="Wifi"><i class="fa fa-wifi" data-bg="bg-red"></i></a>
+							<a href="#" data-toggle="tooltip" data-placement="top" title="Sound"><i class="fa fa-bullhorn" data-bg="bg-lblue"></i></a>
+							<a href="#" data-toggle="tooltip" data-placement="top" title="Brightness"><i class="fa fa-adjust" data-bg="bg-green"></i></a>
+							<a href="#"  data-toggle="tooltip" data-placement="top" title="Flash"><i class="fa fa-bolt" data-bg="bg-yellow"></i></a>
+							<a href="#" data-toggle="tooltip" data-placement="top" title="Location"><i class="fa fa-location-arrow" data-bg="bg-purple"></i></a>
+							<a href="#" data-toggle="tooltip" data-placement="top" title="Aeroplane mode"><i class="fa fa-plane" data-bg="bg-brown"></i></a>
+						</div>
+						<!-- UI Item Two Ends -->
+					</div>
+					<div class="col-md-12 col-sm-12 col-xs-12">
+						<!-- UI Item Three Starts -->
+						<div class="ui-item-three">
+							<!-- UI Icons -->
+							<a href="#" data-toggle="tooltip" data-placement="top" title="Wifi"><i class="fa fa-wifi"></i><i class="fa fa-circle ui-circle red"></i></a>
+							<a href="#" data-toggle="tooltip" data-placement="top" title="Sound"><i class="fa fa-bullhorn"></i><i class="fa fa-circle ui-circle blue"></i></a>
+							<a href="#" data-toggle="tooltip" data-placement="top" title="Brightness"><i class="fa fa-adjust"></i><i class="fa fa-circle ui-circle brown"></i></a>
+							<a href="#" data-toggle="tooltip" data-placement="top" title="Flash"><i class="fa fa-bolt"></i><i class="fa fa-circle ui-circle yellow"></i></a>
+							<a href="#" data-toggle="tooltip" data-placement="top" title="Location"><i class="fa fa-location-arrow"></i><i class="fa fa-circle ui-circle purple"></i></a>
+							<a href="#" data-toggle="tooltip" data-placement="top" title="Aeroplane mode"><i class="fa fa-plane"></i><i class="fa fa-circle ui-circle rose"></i></a>
+						</div>
+						<!-- UI Item Three Ends -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- UI - X Ends -->
+		
+		<!-- Javascript files -->
+		<!-- jQuery -->
+		<script src="js/jquery.js"></script>
+		<!-- Bootstrap JS -->
+		<script src="js/bootstrap.min.js"></script>
+		<!-- Placeholder JS -->
+		<script src="js/placeholder.js"></script>
+		<!-- Respond JS for IE8 -->
+		<script src="js/respond.min.js"></script>
+		<!-- HTML5 Support for IE -->
+		<script src="js/html5shiv.js"></script>
+		
+		<script>
+		
+			/* UI Item One */
+			$(document).ready(function(){
+				/* Tooltip */
+				$('a').tooltip();
+				
+				/* Click event */
+				$(".ui-item-one > a").click(function(e){
+					e.preventDefault(); //Event Prevent function
+					if(!$(this).hasClass("active-one")){
+						$(this).addClass("active-one"); //Add Class to anchor link
+					}
+					else{
+						$(this).removeClass("active-one"); //Remove Class from anchor link
+					}
+				});
+				
+				/* Enable Link Click */
+				$("li a.enabled").click(function(e){
+					e.preventDefault();
+					$(".ui-item-one > a").addClass("active-one"); //Add Class to all anchor link
+				});
+				
+				$("li a.disabled").click(function(e){
+					e.preventDefault();
+					if($(".ui-item-one > a").hasClass("active-one")){
+						$(".ui-item-one > a").removeClass("active-one"); //Remove Class from all anchor link
+					}	
+				});
+			});
+			
+			/* UI Item Two */
+			$(document).ready(function(){
+				/* Link Click */
+				$(".ui-item-two > a").click(function(e){
+					e.preventDefault();
+					var ui_bgcolor = $(this).children("i").attr("data-bg"); //Storing data attribute value in a variable.
+					
+					if(!$(this).hasClass("active-two")){	
+					
+						$(this).addClass("active-two");	//Add Class to link
+						$(this).children("i").addClass(ui_bgcolor); //Add Class to Icon to change background color.
+						
+					}
+					else{
+					
+						$(this).removeClass("active-two"); //Remove Class to link
+						$(this).children("i").removeClass(ui_bgcolor); //Remove Class fron Icon to change into default background.
+						
+					}
+				});
+			});
+			
+			/* UI Item Three */
+			$(document).ready(function(){	
+				/* Link Click */
+				$(".ui-item-three > a").click(function(e){
+					e.preventDefault();
+					if(!$(this).hasClass("active-three")){
+						$(this).addClass("active-three"); //Add Class to anchor link.
+					}
+					else{
+						$(this).removeClass("active-three");	//Remove Class from anchor link.	 			
+					}
+				});
+			});
+			
+		</script>
+		
+	</body>	
+</html>

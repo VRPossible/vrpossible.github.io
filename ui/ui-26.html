@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>UI Design</title>
+		<!-- Description, Keywords and Author -->
+		<meta name="description" content="Your description">
+		<meta name="keywords" content="Your,Keywords">
+		<meta name="author" content="ResponsiveWebInc">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<!-- Styles -->
+		<!-- Bootstrap CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<!-- Font awesome CSS -->
+		<link href="css/font-awesome.min.css" rel="stylesheet">
+		
+		
+		<!-- Main CSS -->
+		<link href="css/style-26.css" rel="stylesheet">
+				
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="#">
+	</head>
+	
+	<body>
+	
+		
+		<!-- UI # -->
+		<div class="ui-26">
+			
+			<!-- Image -->
+			<div class="ui-image">
+				<a href="#"><img src="img/ui-26/user.png" alt="" class="img-responsive" /></a>
+			</div>
+		
+			<!-- Content -->
+			<div class="ui-content">
+				<!-- Close button -->
+				<div class="ui-close"><i class="fa fa-times"></i></div>
+				<!-- Heading -->
+				<h4><a href="#">Welcome to Brave UI Designs</a></h4>
+				<!-- Para -->
+				<p>Hope you are enjoying our cool and stunning UI designs. If you like it, do buy it. It's worth it. Have a great day.</p>
+			</div>
+		</div>
+		
+		<!-- Javascript files -->
+		<!-- jQuery -->
+		<script src="js/jquery.js"></script>
+		<!-- Bootstrap JS -->
+		<script src="js/bootstrap.min.js"></script>
+		<!-- Placeholder JS -->
+		<script src="js/placeholder.js"></script>
+		<!-- Respond JS for IE8 -->
+		<script src="js/respond.min.js"></script>
+		<!-- HTML5 Support for IE -->
+		<script src="js/html5shiv.js"></script>
+		
+		<script type="text/javascript">
+		
+			$(document).ready(function(){
+			
+				<!-- Display after some time -->
+				$(".ui-26").delay("1500").fadeIn(2000);
+			
+				<!-- Close -->
+				$(".ui-26 .ui-content .ui-close").click(function(){
+					$(this).parent().parent(".ui-26").fadeOut(1000);
+				});
+				
+			});
+		
+		</script>
+		
+		
+	</body>	
+</html>

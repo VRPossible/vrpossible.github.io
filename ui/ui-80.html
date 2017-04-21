@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>UI Design</title>
+		<!-- Description, Keywords and Author -->
+		<meta name="description" content="Your description">
+		<meta name="keywords" content="Your,Keywords">
+		<meta name="author" content="ResponsiveWebInc">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<!-- Styles -->
+		<!-- Bootstrap CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">		
+		<!-- Font awesome CSS -->
+		<link href="css/font-awesome.min.css" rel="stylesheet">
+		<!-- Snappish CSS -->
+		<link href="css/jquery.snappish.css" rel="stylesheet">
+		
+		
+		<!-- Main CSS -->
+		<link href="css/style-80.css" rel="stylesheet">
+				
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="#">
+	</head>
+	
+	<body>
+	
+		
+		<!-- UI - X Starts -->
+		<div class="ui-80">
+			<!-- Wrapper Starts -->
+			<div id="wrapper">
+				<!-- Navigation -->
+				<nav>
+					<!-- Unordered Listing -->
+					<ul>
+						<!-- Data Slide Num Zero -->
+						<li><a href="#" data-slide-num="0" class="active"></a></li>
+						<!-- Data Slide Num One -->
+						<li><a href="#" data-slide-num="1"></a></li>
+						<!-- Data Slide Num Two -->
+						<li><a href="#" data-slide-num="2"></a></li>
+						<!-- Data Slide Num Three -->
+						<li><a href="#" data-slide-num="3"></a></li>
+					</ul>
+				</nav>
+				<!-- Snappish Main -->
+				<div class="snappish-main">
+					<!-- Slide One -->
+					<div class="slide-1 active bg-red">
+						<!-- Heading -->
+						<h2>Lorem Ipsum</h2>
+					</div>
+					<!-- Slide Two -->
+					<div class="slide-2 bg-green">
+						<!-- Heading -->
+						<h2>consectetur adipiscing</h2>
+					</div>
+					<!-- Slide Three -->
+					<div class="slide-3 bg-lblue">
+						<!-- Heading -->
+						<h2>Finibus Bonorum</h2>
+					</div>
+					<!-- Slide Four -->
+					<div class="slide-4 bg-yellow">
+						<!-- Heading -->
+						<h2>exercita ullam</h2>
+					</div>
+				</div>
+			</div>
+			<!-- Wrapper Ends -->
+		</div>
+		<!-- UI - X Ends -->
+				
+		<!-- Javascript files -->
+		<!-- jQuery -->
+		<script src="js/jquery.js"></script>
+		<!-- Bootstrap JS -->
+		<script src="js/bootstrap.min.js"></script>
+		
+		<!-- Snappish JS -->
+		<!-- Mouse Wheel JS, Event Move JS, Event Swipe JS, Snappish Main JS -->
+		<script src="js/jquery.mousewheel.js"></script>
+		<script src="js/jquery.event.move.js"></script>
+		<script src="js/jquery.event.swipe.js"></script>
+		<script src="js/jquery.snappish.js"></script>
+		
+		<!-- Placeholder JS -->
+		<script src="js/placeholder.js"></script>
+		<!-- Respond JS for IE8 -->
+		<script src="js/respond.min.js"></script>
+		<!-- HTML5 Support for IE -->
+		<script src="js/html5shiv.js"></script>
+		
+		<script>
+			<!-- Snappish Function -->
+            var $snappish = $('#wrapper').snappish();
+
+            $snappish.on('scrollbegin.snappish', function(e, data) {       // On Scrolling
+                data.toSlide.addClass('active');	// Add Class( Active ) To Slides
+                $('nav a').removeClass('active');	// Remove Class( Active ) From Navigation
+                $('nav a[data-slide-num="' + data.toSlideNum + '"]').addClass('active');   // Add Class( Active ) To Navigation From Where ScrollEnds
+            }).on('scrollend.snappish', function(e, data) {
+                data.fromSlide.removeClass('active');  // On Scroll Ends Remove Class( Active )
+            });
+
+            $('nav a').on('click', function(e) {  //  Navigation OnClick Event
+                e.preventDefault();
+                $snappish.trigger('scrollto.snappish', $(this).data('slide-num'));  //	Scroll To Clicked data slide navigation
+            });
+        </script>
+
+	</body>	
+</html>

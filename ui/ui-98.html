@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>UI Design</title>
+		<!-- Description, Keywords and Author -->
+		<meta name="description" content="Your description">
+		<meta name="keywords" content="Your,Keywords">
+		<meta name="author" content="ResponsiveWebInc">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<!-- Styles -->
+		<!-- Bootstrap CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<!-- Font awesome CSS -->
+		<link href="css/font-awesome.min.css" rel="stylesheet">
+		
+		
+		<!-- Main CSS -->
+		<link href="css/style-98.css" rel="stylesheet">
+				
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="#">
+	</head>
+	
+	<body>
+	
+		
+		<!-- UI - X Starts -->
+		<div class="ui-98">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 col-sm-3 col-xs-6 col-bor col-mob">
+						<!-- Item -->
+						<div class="ui-item">
+							<!-- Heading -->
+							<a href="#" class="heading bg-red">Product</a>
+							<!-- Unordered Listing -->
+							<ul class="clearfix">
+								<!-- Icon, Name -->
+								<li><a href="#"><i class="fa fa-mobile red"></i>Samsung</a></li>
+								<!-- Icon, Name -->
+								<li><a href="#"><i class="fa fa-phone red"></i>Nokia</a></li>
+								<!-- Icon, Name -->
+								<li><a href="#"><i class="fa fa-headphones red"></i>Micromax</a></li>
+								<!-- Icon, Name -->
+								<li><a href="#"><i class="fa fa-info red"></i>Sony</a></li>
+							</ul>
+						</div>
+					</div>
+					
+					<div class="col-md-3 col-sm-3 col-xs-6 col-bor col-mob">
+						<!-- Item -->
+						<div class="ui-item">
+							<!-- Heading -->
+							<a href="#" class="heading bg-lblue">Languages</a>
+							<!-- Unordered Listing -->
+							<ul class="clearfix">
+								<!-- Icon, Name -->
+								<li><a href="#"><i class="fa fa-drupal lblue"></i>Drupal</a></li>
+								<!-- Icon, Name -->
+								<li><a href="#"><i class="fa fa-android lblue"></i>Android</a></li>
+								<!-- Icon, Name -->
+								<li><a href="#"><i class="fa fa-wordpress lblue"></i>Wordpress</a></li>
+								<!-- Icon, Name -->
+								<li><a href="#"><i class="fa fa-css3 lblue"></i>CSS3</a></li>
+								<!-- Icon, Name -->
+								<li><a href="#"><i class="fa fa-joomla lblue"></i>Joomla</a></li>
+								<!-- Icon, Name -->
+								<li><a href="#"><i class="fa fa-jsfiddle lblue"></i>Jsfiddle</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="clearfix visible-xs-block"></div>
+					
+					<div class="col-md-3 col-sm-3 col-xs-6 col-bor col-mob">
+						<!-- Item -->
+						<div class="ui-item">
+							<!-- Heading -->
+							<a href="#" class="heading bg-green">Applications</a>
+							<!-- Unordered Listing -->
+							<ul class="clearfix">
+								<!-- Icon, Name -->
+								<li><a href="#"><i class="fa fa-apple green"></i>Apple</a></li>
+								<!-- Icon, Name -->
+								<li><a href="#"><i class="fa fa-linux green"></i>Linux</a></li>
+								<!-- Icon, Name -->
+								<li><a href="#"><i class="fa fa-dropbox green"></i>DropBox</a></li>
+							</ul>
+						</div>
+					</div>
+					
+					<div class="col-md-3 col-sm-3 col-xs-6 col-bor col-mob">
+						<!-- Item -->
+						<div class="ui-item">
+							<!-- Heading -->
+							<a href="#" class="heading bg-yellow">Socail Media</a>
+							<!-- Unordered Listing -->
+							<ul class="clearfix">
+								<!-- Icon, Name -->
+								<li><a href="#"><i class="fa fa-facebook yellow"></i>Facebook</a></li>
+								<!-- Icon, Name -->
+								<li><a href="#"><i class="fa fa-google-plus yellow"></i>Google-plus</a></li>
+								<!-- Icon, Name -->
+								<li><a href="#"><i class="fa fa-twitter yellow"></i>Twitter</a></li>
+								<!-- Icon, Name -->
+								<li><a href="#"><i class="fa fa-pinterest yellow"></i>Pinterest</a></li>
+								<!-- Icon, Name -->
+								<li><a href="#"><i class="fa fa-linkedin yellow"></i>LinkedIn</a></li>
+								<!-- Icon, Name -->
+								<li><a href="#"><i class="fa fa-yahoo yellow"></i>Yahoo</a></li>
+								<!-- Icon, Name -->
+								<li><a href="#"><i class="fa fa-weixin yellow"></i>We Chat</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="clearfix visible-xs-block"></div>
+				</div>
+			</div>	
+		</div>
+		<!-- UI - X Ends -->
+		
+		<!-- Javascript files -->
+		<!-- jQuery -->
+		<script src="js/jquery.js"></script>
+		<!-- Bootstrap JS -->
+		<script src="js/bootstrap.min.js"></script>
+		<!-- Placeholder JS -->
+		<script src="js/placeholder.js"></script>
+		<!-- Respond JS for IE8 -->
+		<script src="js/respond.min.js"></script>
+		<!-- HTML5 Support for IE -->
+		<script src="js/html5shiv.js"></script>
+		
+		<script>
+			<!-- Slide UP and Down -->
+			$(document).ready(function(){
+				<!-- Heading On Click Event -->
+				$(".ui-item a.heading").click(function(e){
+					e.preventDefault();
+					if(!($(this).next().hasClass("slide"))){
+						$(this).next().slideDown(400).addClass("slide");   //Slide Down And AddClass
+					}
+					else{
+						$(this).next().slideUp(400).removeClass("slide");  //Slide Up And RemoveClass
+					}	
+				});
+			});		
+		</script>
+	</body>	
+</html>

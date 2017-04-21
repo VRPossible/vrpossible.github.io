@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>UI Design</title>
+		<!-- Description, Keywords and Author -->
+		<meta name="description" content="Your description">
+		<meta name="keywords" content="Your,Keywords">
+		<meta name="author" content="ResponsiveWebInc">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<!-- Styles -->
+		<!-- Bootstrap CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<!-- Font awesome CSS -->
+		<link href="css/font-awesome.min.css" rel="stylesheet">
+		
+		
+		<!-- Main CSS -->
+		<link href="css/style-72.css" rel="stylesheet">
+				
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="#">
+	</head>
+	
+	<body>
+	
+		
+		<!-- UI - X Starts -->
+		<div class="ui-72">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 col-sm-6 col-xs-12">
+						<!-- Item -->
+						<div class="ui-item">
+							<!-- Heading -->
+							<div class="ui-heading">
+								<!-- Small Heading -->
+								<h3><a href="#">Lorem Lipsum</a></h3>
+								<!-- Big Heading -->
+								<h2>$12,000 <i class="fa fa-angle-double-up red"></i></h2>
+							</div>
+							<!-- Plot Chart Two -->
+							<div id="plot-chart-one" class="chart-placeholder"></div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12">
+						<!-- Item -->
+						<div class="ui-item">
+							<!-- Heading -->
+							<div class="ui-heading">
+								<!-- Small Heading -->
+								<h3><a href="#">Bonorum</a></h3>
+								<!-- Big Heading -->
+								<h2>$2,000 <i class="fa fa-angle-double-down green"></i></h2>
+							</div>
+							<!-- Plot Chart Two -->
+							<div id="plot-chart-two" class="chart-placeholder"></div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12">
+						<!-- Item -->
+						<div class="ui-item">
+							<!-- Heading -->
+							<div class="ui-heading">
+								<!-- Small Heading -->
+								<h3><a href="#">Content Here</a></h3>
+								<!-- Big Heading -->
+								<h2>$3,000 <i class="fa fa-angle-double-up red"></i></h2>
+							</div>
+							<!-- Plot Chart Three -->
+							<div id="plot-chart-three" class="chart-placeholder"></div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12">
+						<!-- Item -->
+						<div class="ui-item">
+							<!-- Heading -->
+							<div class="ui-heading">
+								<!-- Small Heading -->
+								<h3><a href="#">Finibus</a></h3>
+								<!-- Big Heading -->
+								<h2>$6,000 <i class="fa fa-angle-double-down green"></i></h2>
+							</div>
+							<!-- Plot Chart Four -->
+							<div id="plot-chart-four" class="chart-placeholder"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- UI - X Ends -->
+		
+		<!-- Javascript files -->
+		<!-- jQuery -->
+		<script src="js/jquery.js"></script>
+		<!-- Bootstrap JS -->
+		<script src="js/bootstrap.min.js"></script>
+		
+		<!-- jQuery flot -->
+		<!-- Used for Plot chart -->
+		<!--[if lte IE 8]><script language="javascript" type="text/javascript" src="js/excanvas.min.js"></script><![endif]-->
+		<script src="js/jquery.flot.min.js"></script>     
+		<script src="js/jquery.flot.stack.min.js"></script>
+		<script src="js/jquery.flot.pie.min.js"></script>
+		<script src="js/jquery.flot.resize.min.js"></script>
+		
+		<!-- Placeholder JS -->
+		<script src="js/placeholder.js"></script>
+		<!-- Respond JS for IE8 -->
+		<script src="js/respond.min.js"></script>
+		<!-- HTML5 Support for IE -->
+		<script src="js/html5shiv.js"></script>
+		<script>
+		
+			/* Plot chart One Starts */
+			$(function() {
+					/* Chart data #1 */
+					var d1 = [[0, 12], [1, 10.5], [2, 11.2], [3, 9.5],[4, 8.5], [5, 7.6], [6, 10], [7, 11],[8, 9], [9, 9]];
+
+					var options = {
+						series: {
+						  lines: {
+							 show: true, fill: true, lineWidth:1, fillColor: { colors: [ { opacity: 1 }, { opacity: 1}] }
+						  },
+						  points: {
+							 show: true, fill: true, lineWidth:2, radius:2.5, fillColor: "#fff"
+						  },
+						  shadowSize: 0
+					   },
+						colors :["#f75353 "],
+					   grid: {
+						  show: false, hoverable: true, color: "#aaa", backgroundColor:"#fff" ,borderWidth:1, borderColor:"#ddd", labelMargin:10
+					   },
+					   xaxis: {
+						  ticks: 10,
+						  font: {
+								size: 12,
+								color: ["#9a9a9a"]
+							}
+					   },
+					   yaxis: {
+						  ticks: 8,
+						  font: {
+								size: 12,
+								color: ["#9a9a9a"]
+							}
+					   }, 
+					   legend: {
+						  backgroundOpacity:0,
+						  noColumns:2,
+						  labelBoxBorderColor: "#ddd"
+					   }
+					};
+					
+					$("<div id='tooltip'></div>").css({
+						position: "absolute",
+						display: "none",
+						"border-radius":"3px",
+						padding: "5px 5px",
+						color:"#999",
+						"font-size":"11px",
+						"background-color": "#fff",
+						"border":"1px solid #ccc"
+					}).appendTo("body");
+
+					$("#plot-chart-one").bind("plothover", function (event, pos, item) {
+							if (item) {
+								var x = item.datapoint[0].toFixed(2),
+									y = item.datapoint[1].toFixed(2);
+
+								$("#tooltip").html(x + ", " + y)
+									.css({top: item.pageY+5, left: item.pageX+5})
+									.fadeIn(200);
+							} else {
+								$("#tooltip").hide();
+							}
+					});
+
+					$.plot("#plot-chart-one", [ {data: d1} ], options);
+				 });
+			/* Plot chart One end */
+						
+			/* Plot chart Two Starts */
+			$(function() {
+					/* Chart data #1 */
+					var d1 = [[0, 10], [1, 7.5], [2, 8.2], [3, 8.5],[4, 8.5], [5, 9], [6, 8], [7, 9],[8, 9]];
+
+					var options = {
+						series: {
+						  lines: {
+							 show: true, fill: true, lineWidth:0, fillColor: { colors: [ { opacity: 1 }, { opacity: 1}] }
+						  },
+						  points: {
+							 show: true, fill: true, lineWidth:2, radius:2.5, fillColor: "#fff"
+						  },
+						  shadowSize: 0
+					   },
+						colors :["#32c8de"],
+					   grid: {
+						  show: false, hoverable: true, color: "#aaa", backgroundColor:"#fff" ,borderWidth:1, borderColor:"#ddd", labelMargin:10
+					   },
+					   xaxis: {
+						  ticks: 10,
+						  font: {
+								size: 12,
+								color: ["#9a9a9a"]
+							}
+					   },
+					   yaxis: {
+						  ticks: 8,
+						  font: {
+								size: 12,
+								color: ["#9a9a9a"]
+							}
+					   }
+					};
+					
+					$("<div id='tooltip'></div>").css({
+						position: "absolute",
+						display: "none",
+						"border-radius":"5px",
+						padding: "5px 5px",
+						color:"#999",
+						"font-size":"11px",
+						"background-color": "#fff",
+						"border":"1px solid #ccc"
+					}).appendTo("body");
+
+					$("#plot-chart-two").bind("plothover", function (event, pos, item) {
+							if (item) {
+								var x = item.datapoint[0].toFixed(2),
+									y = item.datapoint[1].toFixed(2);
+
+								$("#tooltip").html(x + ", " + y)
+									.css({top: item.pageY+5, left: item.pageX+5})
+									.fadeIn(200);
+							} else {
+								$("#tooltip").hide();
+							}
+					});
+
+					$.plot("#plot-chart-two", [ {data: d1} ], options);
+				 });
+			/* Plot chart Two end */
+						
+			/* Plot chart Three Starts */
+			$(function() {
+					/* Chart data #1 */
+					var d1 = [[0, 5], [1, 6.5], [2, 8], [3, 6.5],[4, 5.5], [5, 6], [6, 6], [7, 6.5]];
+
+					var options = {
+						series: {
+						  lines: {
+							 show: true, fill: true, lineWidth:0, fillColor: { colors: [ { opacity: 1 }, { opacity: 1}] }
+						  },
+						  points: {
+							 show: true, fill: true, lineWidth:2, radius:2.5, fillColor: "#fff"
+						  },
+						  shadowSize: 0
+					   },
+						colors :["#51d466"],
+					   grid: {
+						  show: false, hoverable: true, color: "#aaa", backgroundColor:"#fff" ,borderWidth:1, borderColor:"#ddd", labelMargin:10
+					   },
+					   xaxis: {
+						  ticks: 10,
+						  font: {
+								size: 12,
+								color: ["#9a9a9a"]
+							}
+					   },
+					   yaxis: {
+						  ticks: 8,
+						  font: {
+								size: 12,
+								color: ["#9a9a9a"]
+							}
+					   }
+					};
+					
+					$("<div id='tooltip'></div>").css({
+						position: "absolute",
+						display: "none",
+						"border-radius":"5px",
+						padding: "5px 5px",
+						color:"#999",
+						"font-size":"11px",
+						"background-color": "#fff",
+						"border":"1px solid #ccc"
+					}).appendTo("body");
+
+					$("#plot-chart-three").bind("plothover", function (event, pos, item) {
+							if (item) {
+								var x = item.datapoint[0].toFixed(2),
+									y = item.datapoint[1].toFixed(2);
+
+								$("#tooltip").html(x + ", " + y)
+									.css({top: item.pageY+5, left: item.pageX+5})
+									.fadeIn(200);
+							} else {
+								$("#tooltip").hide();
+							}
+					});
+
+					$.plot("#plot-chart-three", [ {data: d1} ], options);
+				 });
+			/* Plot chart Three end */
+						
+			/* Plot chart Four Starts */
+			$(function() {
+					/* Chart data #1 */
+					var d1 = [[0, 15], [1, 14.5], [2, 16.2], [3, 10.5],[4, 15.5], [5, 15], [6, 16], [7, 12]];
+
+					var options = {
+						series: {
+						  lines: {
+							 show: true, fill: true, lineWidth:0, fillColor: { colors: [ { opacity: 1 }, { opacity: 1}] }
+						  },
+						  points: {
+							 show: true, fill: true, lineWidth:2, radius:2.5, fillColor: "#fff"
+						  },
+						  shadowSize: 0
+					   },
+						colors :["#fcd419"],
+					   grid: {
+						  show: false, hoverable: true, color: "#aaa", backgroundColor:"#fff" ,borderWidth:1, borderColor:"#ddd", labelMargin:10
+					   },
+					   xaxis: {
+						  ticks: 10,
+						  font: {
+								size: 12,
+								color: ["#9a9a9a"]
+							}
+					   },
+					   yaxis: {
+						  ticks: 8,
+						  font: {
+								size: 12,
+								color: ["#9a9a9a"]
+							}
+					   }
+					};
+					
+					$("<div id='tooltip'></div>").css({
+						position: "absolute",
+						display: "none",
+						"border-radius":"5px",
+						padding: "5px 5px",
+						color:"#999",
+						"font-size":"11px",
+						"background-color": "#fff",
+						"border":"1px solid #ccc"
+					}).appendTo("body");
+
+					$("#plot-chart-four").bind("plothover", function (event, pos, item) {
+							if (item) {
+								var x = item.datapoint[0].toFixed(2),
+									y = item.datapoint[1].toFixed(2);
+
+								$("#tooltip").html(x + ", " + y)
+									.css({top: item.pageY+5, left: item.pageX+5})
+									.fadeIn(200);
+							} else {
+								$("#tooltip").hide();
+							}
+					});
+
+					$.plot("#plot-chart-four", [ {data: d1} ], options);
+				 });
+			/* Plot chart Four end */
+			
+		</script>
+	</body>	
+</html>

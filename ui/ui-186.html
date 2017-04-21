@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>UI Design</title>
+		<!-- Description, Keywords and Author -->
+		<meta name="description" content="Your description">
+		<meta name="keywords" content="Your,Keywords">
+		<meta name="author" content="ResponsiveWebInc">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<!-- Styles -->
+		<!-- Bootstrap CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<!-- Font awesome CSS -->
+		<link href="css/font-awesome.min.css" rel="stylesheet">
+		
+		
+		<!-- Main CSS -->
+		<link href="css/style-186.css" rel="stylesheet">
+				
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="#">
+	</head>
+	
+	<body>
+	
+		
+		<!-- UI # -->
+		<div class="ui-186">
+		
+			<!-- Button -->
+			<div class="ui-btn">
+				<i class="fa fa-bars"></i>
+			</div>
+			
+			<!-- Outer -->
+			<div class="ui-outer bg-red">
+				<!-- UI Content -->
+				<div class="ui-content clearfix">
+					<a href="#" class="ui-close">x</a>	
+				
+					<!-- UI Item -->
+					<div class="ui-item">
+						<!-- Heading -->
+						<h2>Downlaods</h2>
+						<!-- Chart -->
+						<div class="chart-one"></div>
+						<!-- Status -->
+						<div class="status">
+							<div class="container-fluid">
+								<div class="row">
+									<div class="col-xs-6">
+										<!-- Status -->
+										<h4>Visits</h4>
+										<h3>5,302</h3>
+										<hr />
+										<h4>Income</h4>
+										<h3>$1,350</h3>
+									</div>
+									<div class="col-xs-6">
+										<h4>Uploads</h4>
+										<h3>4,124</h3>
+										<hr />
+										<h4>Hits</h4>
+										<h3>4,509</h3>							
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<!-- UI Item -->
+					<div class="ui-item">
+						<!-- Heading -->
+						<h2>Uploads</h2>
+						<!-- Chart -->
+						<div class="chart-one"></div>
+						<!-- Status -->
+						<div class="status">
+							<div class="container-fluid">
+								<div class="row">
+									<div class="col-xs-6">
+										<h4>Visits</h4>
+										<h3>5,302</h3>
+										<hr />
+										<h4>Income</h4>
+										<h3>$1,350</h3>
+									</div>
+									<div class="col-xs-6">
+										<h4>Uploads</h4>
+										<h3>4,124</h3>
+										<hr />
+										<h4>Hits</h4>
+										<h3>4,509</h3>							
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				
+				</div>
+			</div>
+		</div>
+		
+		<!-- Javascript files -->
+		<!-- jQuery -->
+		<script src="js/jquery.js"></script>
+		<!-- Bootstrap JS -->
+		<script src="js/bootstrap.min.js"></script>
+		<!-- Sparklines JS -->
+		<script src="js/sparklines.js"></script>
+		<!-- Placeholder JS -->
+		<script src="js/placeholder.js"></script>
+		<!-- Respond JS for IE8 -->
+		<script src="js/respond.min.js"></script>
+		<!-- HTML5 Support for IE -->
+		<script src="js/html5shiv.js"></script>
+		
+		<script>
+			$(document).ready(function(){
+			
+				$("a.ui-close").click(function(e){
+					e.preventDefault();
+					$(this).parents(".ui-outer").removeClass("open").fadeOut(200);	
+				});
+				$(".ui-186 .ui-btn").click(function(){
+					var $content = $(".ui-outer");
+					if($content.hasClass("open")){
+						$content.fadeOut(200);
+						$content.removeClass("open");
+					}
+					else{
+						$content.fadeIn(200);
+						$content.addClass("open");
+					}
+				});
+				
+				<!-- Sparkline chart -->
+				
+				$(".chart-one").sparkline([15,66,47,12,45,59,61,49,39,22,42,44,35,24,18,46,43,44,34,28], {
+				type: 'bar',
+				height: '50',
+				barSpacing: '2',
+				barColor: '#ffffff'});
+			});
+		</script>
+		
+	</body>	
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>UI Design</title>
+		<!-- Description, Keywords and Author -->
+		<meta name="description" content="Your description">
+		<meta name="keywords" content="Your,Keywords">
+		<meta name="author" content="ResponsiveWebInc">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<!-- Styles -->
+		<!-- Bootstrap CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<!-- Font awesome CSS -->
+		<link href="css/font-awesome.min.css" rel="stylesheet">
+		
+		
+		<!-- Main CSS -->
+		<link href="css/style-259.css" rel="stylesheet">
+				
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="#">
+	</head>
+	
+	<body>
+	
+		
+		<!-- UI - X Starts -->
+		<div class="ui-259">
+			<!-- List -->
+			<div class="ui-list">
+				<!-- Icon -->	
+				<a href="#" class="ui-tooltip bg-red" data-toggle="tooltip" data-placement="left" title="Android"><i class="fa fa-android"></i></a>
+				<!-- Icon -->
+				<a href="#" class="ui-tooltip bg-red" data-toggle="tooltip" data-placement="left" title="Apple"><i class="fa fa-apple"></i></a>
+				<!-- Icon -->
+				<a href="#" class="ui-tooltip bg-red" data-toggle="tooltip" data-placement="left" title="Dropbox"><i class="fa fa-dropbox"></i></a>
+				<!-- Icon -->
+				<a href="#" class="ui-tooltip bg-red" data-toggle="tooltip" data-placement="left" title="Drupal"><i class="fa fa-drupal"></i></a>
+				<!-- Icon -->
+				<a href="#" class="ui-tooltip bg-red" data-toggle="tooltip" data-placement="left" title="Linux"><i class="fa fa-linux"></i></a>
+			</div>
+			<!-- Button -->
+			<a href="#" class="ui-btn bg-red">+</a>
+		</div>
+		<!-- UI - X Ends -->
+		
+		<!-- Javascript files -->
+		<!-- jQuery -->
+		<script src="js/jquery.js"></script>
+		<!-- Bootstrap JS -->
+		<script src="js/bootstrap.min.js"></script>
+		<!-- Placeholder JS -->
+		<script src="js/placeholder.js"></script>
+		<!-- Respond JS for IE8 -->
+		<script src="js/respond.min.js"></script>
+		<!-- HTML5 Support for IE -->
+		<script src="js/html5shiv.js"></script>
+		<script>
+			<!-- Tooltip -->
+			$(function () {
+				$('.ui-tooltip').tooltip();
+			});
+			<!-- Animation -->
+			$(document).ready(function(){
+				$("a.ui-btn").click(function(e){
+					e.preventDefault();
+					if(!($(this).hasClass("active"))){
+						$(".ui-list").animate({
+							height: "260px",
+							opacity: "1"
+						});
+						$(this).addClass("active");
+					}
+					else{
+						$(".ui-list").animate({
+							height: "0px",
+							opacity: "0"
+						});
+						$(this).removeClass("active");
+					}
+				});
+			});
+		</script>
+	</body>	
+</html>

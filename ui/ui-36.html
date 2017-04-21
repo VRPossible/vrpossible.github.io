@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>UI Design</title>
+		<!-- Description, Keywords and Author -->
+		<meta name="description" content="Your description">
+		<meta name="keywords" content="Your,Keywords">
+		<meta name="author" content="ResponsiveWebInc">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<!-- Styles -->
+		<!-- Bootstrap CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<!-- Font awesome CSS -->
+		<link href="css/font-awesome.min.css" rel="stylesheet">
+		
+		
+		<!-- Main CSS -->
+		<link href="css/style-36.css" rel="stylesheet">
+				
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="#">
+	</head>
+	
+	<body>
+	
+		<!-- UI - X Starts -->
+		<div class="ui-36">
+			<!-- Button -->
+			<div class="ui-btn">
+				<!-- Icon -->
+				<a href="#"> <i class="fa fa-angle-up bg-lblue"></i> </a>				
+			</div>
+			<!-- Content -->
+			<div class="ui-content">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-3 col-sm-3 col-xs-12">
+							<!-- Item -->
+							<div class="ui-item">
+								<!-- Bar -->
+								<div class="ui-bar">
+									<!-- SpakBar -->
+									<span class="sparkbar sparkbarone">23,76,46,75,60,70,77,89,34,12</span>
+								</div>
+								<!-- Heading -->
+								<div class="ui-heading">
+									<!-- Small Heading -->
+									<h5>Lipsum</h5>
+									<!-- Big Heading  -->
+									<h2>4,245</h2>
+								</div>
+								<div class="clearfix"></div>
+								<!-- Icon -->
+								<div class="ui-icon">
+									<!-- Icon and Number -->
+									<a href="#"><i class="fa fa-angle-up bg-red"></i></a> &nbsp;<span>2,345</span> &nbsp; <a href="#"><i class="fa fa-angle-down bg-green"></i></a> &nbsp;<span>2,245</span>
+								</div>
+								<div class="clearfix"></div>	
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-3 col-xs-12">
+							<!-- Item -->
+							<div class="ui-item">
+								<!-- Bar -->
+								<div class="ui-bar">
+									<!-- SparkBar -->
+									<span class="sparkbar sparkbartwo">34,55,66,76,46,80,10,16,56,66</span>
+								</div>
+								<!-- Heading -->
+								<div class="ui-heading">
+									<!-- Small Heading -->
+									<h5>Lorem</h5>
+									<!-- Big Heading -->
+									<h2>2,567</h2>
+								</div>
+								<div class="clearfix"></div>
+								<!-- Icon -->
+								<div class="ui-icon">
+									<!-- Icon and Number -->
+									<a href="#"><i class="fa fa-angle-up bg-red"></i></a> &nbsp;<span>2,345</span> &nbsp; <a href="#"><i class="fa fa-angle-down bg-green"></i></a> &nbsp;<span>4,345</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-3 col-xs-12">
+							<!-- Item -->
+							<div class="ui-item">
+								<!-- Bar -->
+								<div class="ui-bar">	
+									<!-- SparkBar -->
+									<span class="sparkbar sparkbarthree">6,7,12,3,4,9,6,10,8,9</span>
+								</div>
+								<!-- Heading -->
+								<div class="ui-heading">
+									<!-- Small Heading -->
+									<h5>Finibus</h5>
+									<!-- Big Heading -->
+									<h2>3,890</h2>
+								</div>
+								<div class="clearfix"></div>
+								<!-- Icon -->
+								<div class="ui-icon">
+									<!-- Icon and Number -->
+									<a href="#"><i class="fa fa-angle-up bg-red"></i></a> &nbsp;<span>1,345</span> &nbsp; <a href="#"><i class="fa fa-angle-down bg-green"></i></a> &nbsp;<span>1,245</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-3 col-xs-12">
+							<!-- Item -->
+							<div class="ui-item">
+								<!-- Bar -->
+								<div class="ui-bar">
+									<!-- SparkBar -->
+									<span class="sparkbar sparkbarfour">80,90,56,67,23,45,76,46,66,12</span>
+								</div>
+								<!-- Heading -->
+								<div class="ui-heading">
+									<!-- Small Heading -->
+									<h5>Marolum</h5>
+									<!-- Big Heading -->
+									<h2>7,678</h2>
+								</div>
+								<div class="clearfix"></div>
+								<!-- Icon -->
+								<div class="ui-icon">
+									<!-- Icon and Number -->
+									<a href="#"><i class="fa fa-angle-up bg-red"></i></a> &nbsp;<span>9,345</span> &nbsp; <a href="#"><i class="fa fa-angle-down bg-green"></i></a> &nbsp;<span>5,345</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- UI - X Ends -->
+		
+		<!-- Javascript files -->
+		<!-- jQuery -->
+		<script src="js/jquery.js"></script>
+		<!-- Bootstrap JS -->
+		<script src="js/bootstrap.min.js"></script>
+		<!-- Sparklines JS -->
+		<!-- Used in Content for Bar chart -->
+		<script src="js/sparklines.js"></script>
+		<!-- Placeholder JS -->
+		<script src="js/placeholder.js"></script>
+		<!-- Respond JS for IE8 -->
+		<script src="js/respond.min.js"></script>
+		<!-- HTML5 Support for IE -->
+		<script src="js/html5shiv.js"></script>
+		
+		<script type="text/javascript">	
+			
+			<!-- Animation( Slide Up And Down ) -->
+			$(document).ready(function(){
+				$(".ui-btn > a").click(function(e){    //OnClick Event
+					e.preventDefault();
+					if(!$(".ui-36").hasClass("open")){   //Check the Class animate(if not)
+						$(".ui-36").animate({				//Animate(Up)
+							bottom:"0px"			
+						});	
+						$(".ui-btn > a > i").removeClass("fa-angle-up").addClass("fa-angle-down");    //Change the Icon
+						$(".ui-36").addClass("open");  //AddClass to the Link
+					}
+					else{						//Check thc Class animate(if Yes)
+						$(".ui-36").animate({    //Animate(Down)
+							bottom:"-172px"    
+						});
+						$(".ui-btn > a > i").removeClass("fa-angle-down").addClass("fa-angle-up");    //Change Icon
+						$(".ui-36").removeClass("open");   //Remove the Class from Link
+					}					
+				});
+			});
+			
+			<!-- Sparkline Chart to Display Bar Chart -->
+			<!-- SparkBar One -->
+			$('.sparkbarone').sparkline('html', {
+				type: 'bar',
+				height: '80',
+				barWidth: 4,
+				barColor: '#32c8de'
+			});	
+			<!-- SparkBar Two -->
+			$('.sparkbartwo').sparkline('html', {
+				type: 'bar',
+				height: '80',
+				barWidth: 4,
+				barColor: '#f75353'
+			});
+			<!-- SparkBar Three -->
+			$('.sparkbarthree').sparkline('html', {
+				type: 'bar',
+				height: '80',
+				barWidth: 4,
+				barColor: '#51d466'
+			});
+			<!-- SparkBar Four -->
+			$('.sparkbarfour').sparkline('html', {
+				type: 'bar',
+				height: '80',
+				barWidth: 4,
+				barColor: '#f78153'
+			});	
+
+			
+			
+		</script>
+	</body>	
+</html>

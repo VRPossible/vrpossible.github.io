@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>UI Design</title>
+		<!-- Description, Keywords and Author -->
+		<meta name="description" content="Your description">
+		<meta name="keywords" content="Your,Keywords">
+		<meta name="author" content="ResponsiveWebInc">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<!-- Styles -->
+		<!-- Bootstrap CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<!-- Font awesome CSS -->
+		<link href="css/font-awesome.min.css" rel="stylesheet">
+		
+		
+		<!-- Main CSS -->
+		<link href="css/style-79.css" rel="stylesheet">
+				
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="#">
+	</head>
+	
+	<body>
+	
+		
+		<!-- UI X -->
+		<div class="ui-79">	
+		
+			<!-- List -->
+			<div class="list">
+			
+				<!-- List item. Specify background color here... -->
+				<div class="l-item bg-lblue">
+					<!-- and here -->
+					<a href="#" class="bg-lblue clearfix">
+						<!-- Heading -->
+						<span>Web Designing</span>
+						<!-- Icon -->
+						<i class="fa fa-angle-double-down"></i>
+					</a>
+					<!-- Content -->
+					<div class="content">
+						<!-- Heading -->
+						<h2>Web Designing</h2>
+						<!-- Paragraph -->
+						<p>Lorem ipsum dolor sit amet, bitur erat lacus, tincidunt id nulla id, pulvinar congue turpis. Phasellus sollicitudin sit amet ante sed condimentum. Fusce feugiat sapien ut nibh condimentum tempus.</p>
+					</div>
+				</div>
+				
+				<!-- List item. Specify background color here... -->
+				<div class="l-item bg-red">
+					<!-- and here -->
+					<a href="#" class="bg-red clearfix">
+						<!-- Heading -->
+						<span>Android App</span>
+						<!-- Icon -->
+						<i class="fa fa-angle-double-down"></i>
+					</a>
+					<!-- Content -->
+					<div class="content">
+						<!-- Heading -->
+						<h2>Android App</h2>
+						<!-- Paragraph -->
+						<p>Lorem ipsum dolor sit amet, bitur erat lacus, tincidunt id nulla id, pulvinar congue turpis. Phasellus sollicitudin sit amet ante sed condimentum. Fusce feugiat sapien ut nibh condimentum tempus.</p>
+					</div>
+				</div>
+				
+				<!-- List item. Specify background color here... -->
+				<div class="l-item bg-green">
+					<!-- and here -->
+					<a href="#" class="bg-green clearfix">
+						<!-- Heading -->
+						<span>Web Development</span>
+						<!-- Icon -->
+						<i class="fa fa-angle-double-down"></i>
+					</a>
+					<!-- Content -->
+					<div class="content">
+						<!-- Heading -->
+						<h2>Web Development</h2>
+						<!-- Paragraph -->
+						<p>Lorem ipsum dolor sit amet, bitur erat lacus, tincidunt id nulla id, pulvinar congue turpis. Phasellus sollicitudin sit amet ante sed condimentum. Fusce feugiat sapien ut nibh condimentum tempus.</p>
+					</div>
+				</div>
+				
+				<!-- List item. Specify background color here... -->
+				<div class="l-item bg-yellow">
+					<!-- and here -->
+					<a href="#" class="bg-yellow clearfix">
+						<!-- Heading -->
+						<span>Photoshop</span>
+						<!-- Icon -->
+						<i class="fa fa-angle-double-down"></i>
+					</a>
+					<!-- Content -->
+					<div class="content">
+						<!-- Heading -->
+						<h2>Photoshop</h2>
+						<!-- Paragraph -->
+						<p>Lorem ipsum dolor sit amet, bitur erat lacus, tincidunt id nulla id, pulvinar congue turpis. Phasellus sollicitudin sit amet ante sed condimentum. Fusce feugiat sapien ut nibh condimentum tempus.</p>
+					</div>
+				</div>
+				
+				<!-- List item. Specify background color here... -->
+				<div class="l-item bg-orange">
+					<!-- and here -->
+					<a href="#" class="bg-orange clearfix">
+						<!-- Heading -->
+						<span>Cloud Hosting</span>
+						<!-- Icon -->
+						<i class="fa fa-angle-double-down"></i>
+					</a>
+					<!-- Content -->
+					<div class="content">
+						<!-- Heading -->
+						<h2>Cloud Hosting</h2>
+						<!-- Paragraph -->
+						<p>Lorem ipsum dolor sit amet, bitur erat lacus, tincidunt id nulla id, pulvinar congue turpis. Phasellus sollicitudin sit amet ante sed condimentum. Fusce feugiat sapien ut nibh condimentum tempus.</p>
+					</div>
+				</div>
+			
+			</div>
+		
+		</div>
+		
+		<!-- Javascript files -->
+		<!-- jQuery -->
+		<script src="js/jquery.js"></script>
+		<!-- Bootstrap JS -->
+		<script src="js/bootstrap.min.js"></script>
+		<!-- Placeholder JS -->
+		<script src="js/placeholder.js"></script>
+		<!-- Respond JS for IE8 -->
+		<script src="js/respond.min.js"></script>
+		<!-- HTML5 Support for IE -->
+		<script src="js/html5shiv.js"></script>
+		
+		<script>
+			<!-- Slide down -->
+			$(document).ready(function(){
+				$(".ui-79 .l-item > a").click(function(e){
+					e.preventDefault();
+					var allContent = $(".ui-79 .content");
+					var content = $(this).next(".content");
+					if(content.hasClass("open")){
+						content.slideUp(200);
+						content.removeClass("open");
+					}
+					else{
+						allContent.slideUp(200);
+						allContent.removeClass("open");
+						content.slideDown(200);
+						content.addClass("open");
+					}
+				});
+			});	
+		</script>
+		
+	</body>	
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>UI Design</title>
+		<!-- Description, Keywords and Author -->
+		<meta name="description" content="Your description">
+		<meta name="keywords" content="Your,Keywords">
+		<meta name="author" content="ResponsiveWebInc">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<!-- Styles -->
+		<!-- Bootstrap CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<!-- Font awesome CSS -->
+		<link href="css/font-awesome.min.css" rel="stylesheet">
+		
+		
+		<!-- Main CSS -->
+		<link href="css/style-75.css" rel="stylesheet">
+				
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="#">
+	</head>
+	
+	<body>
+	
+		
+		<!-- UI - X -->
+		<div class="ui-75">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 col-sm-6 col-xs-6 col-mob">
+						<!-- Item -->
+						<div class="ui-item">
+							<!-- Heading -->
+							<h2 class="bg-red"><a href="#">Review</a></h2>
+							<!-- Unordered Listing -->
+							<ul class="clearfix">
+								<!-- Icon, Text, Number, Bar-chart -->
+								<li><a href="#"><i class="fa fa-book red"></i> Visits</a> <span class="bar-one bar-chart">8,9,7,5,8,6,8,9,10</span><span>1,000</span></li>
+								<!-- Icon, Text, Number, Bar-chart -->
+								<li><a href="#"><i class="fa fa-building-o lblue"></i> Visitors</a> <span class="bar-two bar-chart">12,13,10,8,9,13,6,12,10</span><span>5,000</span></li>
+								<!-- Icon, Text, Number, Bar-chart -->
+								<li><a href="#"><i class="fa fa-calculator green"></i> Income</a> <span class="bar-three bar-chart">10,8,9,6,10,12,13,8,10</span><span>6,000</span></li>
+							</ul>
+						</div>
+					</div>
+					
+					<div class="col-md-3 col-sm-6 col-xs-6 col-mob">
+						<!-- Item -->
+						<div class="ui-item">
+							<!-- Heading -->
+							<h2 class="bg-lblue"><a href="#">Product</a></h2>
+							<!-- Unordered Listing -->	
+							<ul class="clearfix">
+								<!-- Icon, Text, Number, Bar-chart -->
+								<li><a href="#"><i class="fa fa-database purple"></i> Product</a> <span class="bar-four bar-chart">10,12,13,10,9,8,5,10,12</span><span>1,200</span></li>
+								<!-- Icon, Text, Number, Bar-chart -->
+								<li><a href="#"><i class="fa fa-folder rose"></i> Quantity</a> <span class="bar-five bar-chart">15,12,10,9,12,15,16,10,12</span><span>1,900</span></li>
+								<!-- Icon, Text, Number, Bar-chart -->
+								<li><a href="#"><i class="fa fa-tag brown"></i> Price</a> <span class="bar-six bar-chart">12,10,9,10,15,13,9,6,10</span><span>1,300</span></li>
+							</ul>
+						</div>
+					</div>
+					
+					<div class="col-md-3 col-sm-6 col-xs-6 col-mob">
+						<!-- Item -->
+						<div class="ui-item">
+							<!-- Heading -->
+							<h2 class="bg-green"><a href="#">Comments</a></h2>
+							<!-- Unordered Listing -->
+							<ul class="clearfix">
+								<!-- Icon, Text, Number, Bar-chart -->
+								<li><a href="#"><i class="fa fa-comment yellow"></i> Comments</a> <span class="bar-seven bar-chart">12,13,17,10,9,8,10,8,14</span><span>2,200</span></li>
+								<!-- Icon, Text, Number, Bar-chart -->
+								<li><a href="#"><i class="fa fa-envelope orange"></i> Messages</a> <span class="bar-eight bar-chart">18,12,20,10,15,16,10,12,19</span><span>2,700</span></li>
+								<!-- Icon, Text, Number, Bar-chart -->
+								<li><a href="#"><i class="fa fa-thumbs-up green"></i> Likes</a> <span class="bar-nine bar-chart">12,13,9,10,12,14,17,8,12</span><span>2,320</span></li>
+							</ul>
+						</div>
+					</div>
+					
+					<div class="col-md-3 col-sm-6 col-xs-6 col-mob">
+						<!-- Item -->
+						<div class="ui-item">
+							<!-- Heading -->
+							<h2 class="bg-yellow"><a href="#">Tweets</a></h2>
+							<!-- Unordered Listing -->
+							<ul class="clearfix">
+								<!-- Icon, Text, Number, Bar-chart -->
+								<li><a href="#"><i class="fa fa-twitter blue"></i> Tweets</a> <span class="bar-ten bar-chart">12,16,29,34,10,9,9,34,45</span><span>1,570</span></li>
+								<!-- Icon, Text, Number, Bar-chart -->
+								<li><a href="#"><i class="fa fa-retweet rose"></i> Follower</a> <span class="bar-eleven bar-chart">10,10,12,13,16,18,9,10,12</span><span>1,900</span></li>
+								<!-- Icon, Text, Number, Bar-chart -->
+								<li><a href="#"><i class="fa fa-recycle brown"></i> Following</a> <span class="bar-twelve bar-chart">13,14,18,10,9,12,14,18,20</span><span>1,150</span></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- UI - X Ends -->
+		
+		<!-- Javascript files -->
+		<!-- jQuery -->
+		<script src="js/jquery.js"></script>
+		<!-- Bootstrap JS -->
+		<script src="js/bootstrap.min.js"></script>
+		
+		<!-- Sparkline Chart -->
+		<script type="text/javascript" src="js/sparklines.js"></script>
+		
+		<!-- Placeholder JS -->
+		<script src="js/placeholder.js"></script>
+		<!-- Respond JS for IE8 -->
+		<script src="js/respond.min.js"></script>
+		<!-- HTML5 Support for IE -->
+		<script src="js/html5shiv.js"></script>
+		
+		<script type="text/javascript">
+			<!-- Sparkline Chart -->
+			$(function() {
+				<!-- Bar Chart One -->
+				$(".bar-one").sparkline('html', { type: 'bar', height: '28 ', barColor: '#f75353'});
+				<!-- Bar Chart Two -->
+				$(".bar-two").sparkline('html', { type: 'bar', height: '28 ', barColor: '#32c8de'});
+				<!-- Bar Chart Three -->
+				$(".bar-three").sparkline('html', { type: 'bar', height: '28 ', barColor: '#51d466'});
+				
+				<!-- Bar Chart Four -->
+				$(".bar-four").sparkline('html', { type: 'bar', height: '28 ', barColor: '#cb79e6'});
+				<!-- Bar Chart Five -->
+				$(".bar-five").sparkline('html', { type: 'bar', height: '28 ', barColor: '#ff61e7'});
+				<!-- Bar Chart Six -->
+				$(".bar-six").sparkline('html', { type: 'bar', height: '28 ', barColor: '#d08166'});
+				
+				<!-- Bar Chart Seven -->
+				$(".bar-seven").sparkline('html', { type: 'bar', height: '28 ', barColor: '#fcd419'});
+				<!-- Bar Chart Eight -->
+				$(".bar-eight").sparkline('html', { type: 'bar', height: '28 ', barColor: '#f78153'});
+				<!-- Bar Chart Nine -->
+				$(".bar-nine").sparkline('html', { type: 'bar', height: '28 ', barColor: '#30c247'});
+				
+				<!-- Bar Chart Ten -->
+				$(".bar-ten").sparkline('html', { type: 'bar', height: '28 ', barColor: '#609cec'});
+				<!-- Bar Chart Eleven -->
+				$(".bar-eleven").sparkline('html', { type: 'bar', height: '28 ', barColor: '#ff2edf'});
+				<!-- Bar Chart Twelve -->
+				$(".bar-twelve").sparkline('html', { type: 'bar', height: '28 ', barColor: '#c4613f'});
+			});
+    </script>
+	</body>	
+</html>

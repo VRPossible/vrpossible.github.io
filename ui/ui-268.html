@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>UI Design</title>
+		<!-- Description, Keywords and Author -->
+		<meta name="description" content="Your description">
+		<meta name="keywords" content="Your,Keywords">
+		<meta name="author" content="ResponsiveWebInc">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<!-- Styles -->
+		<!-- Bootstrap CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<!-- Font awesome CSS -->
+		<link href="css/font-awesome.min.css" rel="stylesheet">
+		
+		
+		<!-- Main CSS -->
+		<link href="css/style-268.css" rel="stylesheet">
+				
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="#">
+	</head>
+	
+	<body>
+	
+		
+		<!-- UI # -->
+		<div class="ui-268">
+		
+			<div class="container">
+				<!-- UI content -->
+				<div class="block-content bg-lblue">
+					<div class="map-area">
+						<!-- Map Image -->
+						<img class="img-responsive" src="img/ui-268/map.png" alt="" />
+						<!-- Map marker with image -->
+						<div class="map-mark mark-one">
+							<div class="mark-content">
+								<span>Creative pvt. Ltd.</span>
+								<p>#45/8 New Colony,<br>Lake City Garden Venue,<br>USA-343212</p>
+							</div>
+							<a href="#"><i class="fa fa-map-marker red"></i></a>
+						</div>
+						<div class="map-mark mark-two">
+							<div class="mark-content">
+								<span>Design pvt. Ltd.</span>
+								<p>#45/7 New Colony,<br>Lake City Garden Venue,<br>Africa-343212</p>
+							</div>
+							<a href="#"><i class="fa fa-map-marker red"></i></a>
+						</div>
+						<div class="map-mark mark-three">
+							<div class="mark-content">
+								<span>CEO Pvt. Ltd.</span>
+								<p>#45/12 New Colony,<br>Lake City Garden Venue,<br>US-343212</p>
+							</div>
+							<a href="#"><i class="fa fa-map-marker red"></i></a>
+						</div>
+						<div class="map-mark mark-four">
+							<div class="mark-content">
+								<span>Manager Pvt. Ltd.</span>
+								<p>#45/14 New Colony,<br>Lake City Garden Venue,<br>India-343212</p>
+							</div>
+							<a href="#"><i class="fa fa-map-marker red"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		
+		</div>
+		
+		<!-- Javascript files -->
+		<!-- jQuery -->
+		<script src="js/jquery.js"></script>
+		<!-- Bootstrap JS -->
+		<script src="js/bootstrap.min.js"></script>
+		<!-- Placeholder JS -->
+		<script src="js/placeholder.js"></script>
+		<!-- Respond JS for IE8 -->
+		<script src="js/respond.min.js"></script>
+		<!-- HTML5 Support for IE -->
+		<script src="js/html5shiv.js"></script>
+		<script>
+			$(document).ready(function(){
+				$('.map-mark a').hover(function(){
+					$(this).parent().children('.mark-content').fadeToggle(350);
+				});
+			});
+		</script>
+	</body>	
+</html>

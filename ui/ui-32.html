@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>UI Design</title>
+		<!-- Description, Keywords and Author -->
+		<meta name="description" content="Your description">
+		<meta name="keywords" content="Your,Keywords">
+		<meta name="author" content="ResponsiveWebInc">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<!-- Styles -->
+		<!-- Bootstrap CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<!-- Font awesome CSS -->
+		<link href="css/font-awesome.min.css" rel="stylesheet">
+		
+		<!-- CSS for this page -->
+		<!-- Stepper CSS -->
+		<link href="css/jquery.fs.stepper.css" rel="stylesheet">
+		
+		<!-- Main CSS -->
+		<link href="css/style-32.css" rel="stylesheet">
+				
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="#">
+	</head>
+	
+	<body>
+	
+		
+		<!-- UI - X Starts -->
+		<div class="ui-32">
+			<div class="container-fluid">
+				
+				<!-- Cart Dropdown -->
+				<h5>Cart Dropdown</h5>
+				<hr />
+				
+				<br />
+				
+				<!-- Cart Dropdown Starts -->
+				<div class="ui-cart-dd">
+					<!-- Cart -->
+					<div class="ui-cart">
+						<a href="#">
+							<i class="fa fa-shopping-cart cart-icon lblue"></i>
+							<!-- Para -->
+							<span>View your shopping cart &nbsp;<i class="fa fa-caret-down"></i></span>							
+						</a>
+					</div>
+					<!-- Dropdown -->
+					<div class="ui-dd">		
+						<!-- Arrow Up -->
+						<div class="arrow-up"></div>
+						<!-- Dropdown Item -->
+						<div class="ui-dd-item">	
+							<!-- Dropdown Header -->
+							<div class="ui-dd-header">
+								<!-- Product name -->
+								<h5><a href="#">Micromax</a></h5>
+								<!-- Price -->
+								<span>$1,200</span>
+							</div>	
+							<!-- Dropdown Quantity -->
+							<div class="ui-dd-quantity">
+								<!-- Quantity -->
+								<input type="number" min="1" max="20" value="2" class="quantity"/>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+						<!-- Dropdown Item -->
+						<div class="ui-dd-item">
+							<!-- Dropdown Header -->
+							<div class="ui-dd-header">
+								<!-- Product name -->
+								<h5><a href="#">Samsung Galaxy</a></h5>
+								<!-- Price -->	
+								<span>$1,000</span>
+							</div>
+							<!-- Dropdown Quantity -->	
+							<div class="ui-dd-quantity">
+								<!-- Quantity -->
+								<input type="number" min="1" max="20" value="2" class="quantity"/>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+						<!-- Dropdown Item -->
+						<div class="ui-dd-item">
+							<!-- Dropdown Header -->
+							<div class="ui-dd-header">
+								<!-- Product name -->
+								<h5><a href="#">Nokia Lumia</a></h5>
+								<!-- Price -->
+								<span>$2,000</span>
+							</div>
+							<!-- Dropdown Quantity -->	
+							<div class="ui-dd-quantity">
+								<!-- Quantity -->
+								<input type="number" min="1" max="20" value="10" class="quantity"/>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+						<!-- Dropdown Item -->
+						<div class="ui-dd-item">
+							<!-- Heading -->
+							<strong>Total: $12,000</strong>
+							<!-- Checkout Button -->
+							<a href="#" class="btn btn-green btn-sm">Checkout</a>
+							<!-- Open Cart Button -->
+							<a href="#" class="btn btn-lblue btn-sm">Open Cart</a>
+						</div>
+					</div>
+				</div>
+				<!-- Cart Dropdown Ends -->
+				
+				<br/><br/>
+				
+				<!-- View Cart -->
+				<!-- View Cart Starts -->
+				<div class="ui-view-cart">
+					<!-- Heading -->
+					<h5>View Cart</h5>
+					<hr />
+					
+					<!-- Tabke Responsive -->
+					<div class="table-responsive">
+						<!-- Table -->
+						<table class="table">							
+							<tr>
+								<!-- Header -->
+								<!-- ID -->
+								<th>#</th>
+								<!-- Image -->
+								<th>Image</th>
+								<!-- Product Name -->
+								<th>Product Name</th>
+								<!-- Price -->
+								<th>Price</th>
+								<!-- Quantity -->
+								<th>Quantity</th>
+								<!-- Total Price -->
+								<th>Total Price</th>
+								<!-- Action -->
+								<th class="text-center">Action</th>
+							</tr>
+							<tr>								
+								<!-- Data -->
+								<!-- ID -->
+								<td>1</td>
+								<!-- Image -->	
+								<td><a href="#"><img src="img/ui-32/items/1.png" alt="" /></a></td>								
+								<td>
+									<!-- Product Name -->
+									<h6><a href="#">Nokia Lumia</a></h6>
+								</td>
+								<!-- Price -->
+								<td class="lblue">$2,000</td>
+								<!-- Quantity -->
+								<td><input type="number" min="1" max="40" value="4" class="quantity"/></td>
+								<!-- Total Price -->
+								<td class="green">$4,000</td>
+								<!-- Action -->
+								<td class="text-center">
+									<a href="#" class="cross" data-toggle="tooltip" data-placement="top" title="Remove">X</a>
+								</td>
+							</tr>
+							<tr>								
+								<!-- Data -->
+								<!-- ID -->
+								<td>2</td>
+								<!-- Image -->
+								<td><a href="#"><img src="img/ui-32/items/2.png" alt="" /></a></td>
+								<td>
+									<!-- Product Name -->
+									<h6><a href="#">Blackberry</a></h6>
+								</td>
+								<!-- Price -->
+								<td class="lblue">$1,000</td>
+								<!-- Quantity -->
+								<td><input type="number" min="1" max="5" value="1" class="quantity"/></td>
+								<!-- Total Price -->
+								<td class="green">$2,000</td>
+								<!-- Action -->
+								<td class="text-center">
+									<a href="#" class="cross" data-toggle="tooltip" data-placement="top" title="Remove">X</a>
+								</td>
+							</tr>
+							<tr>								
+								<!-- Data -->
+								<!-- ID -->
+								<td>3</td>
+								<!-- Image -->
+								<td><a href="#"><img src="img/ui-32/items/3.png" alt="" /></a></td>
+								<td>
+									<!-- Product Name -->
+									<h6><a href="#">Samsung Galaxy Note 4</a></h6>
+								</td>
+								<!-- Price -->
+								<td class="lblue">$3,000</td>
+								<!-- Quantity -->
+								<td><input type="number" min="1" max="10" value="2" class="quantity"/></td>
+								<!-- Total Price -->
+								<td class="green">$6,000</td>
+								<!-- Action -->
+								<td class="text-center">
+									<a href="#" class="cross" data-toggle="tooltip" data-placement="top" title="Remove">X</a>
+								</td>
+							</tr>
+							<tr>								
+								<!-- Data -->
+								<!-- ID -->
+								<td>4</td>
+								<!-- Image -->
+								<td><a href="#"><img src="img/ui-32/items/4.png" alt="" /></a></td>
+								<td>
+									<!-- Product Name -->
+									<h6><a href="#">Samsung Galaxy Brand</a></h6>
+								</td>
+								<!-- Price -->
+								<td class="lblue">$1,000</td>
+								<!-- Quantity -->
+								<td><input type="number" min="1" max="30" value="2" class="quantity"/></td>
+								<!-- Total Price -->
+								<td class="green">$2,000</td>
+								<!-- Action -->
+								<td class="text-center">
+									<a href="#" class="cross" data-toggle="tooltip" data-placement="top" title="Remove">X</a>
+								</td>
+							</tr>
+							<tr>								
+								<!-- Data -->
+								<!-- ID -->
+								<td>5</td>
+								<!-- Image -->
+								<td><a href="#"><img src="img/ui-32/items/5.png" alt="" /></a></td>
+								<td>
+									<!-- Product Name -->
+									<h6><a href="#">Samsung Galaxy S4</a></h6>
+								</td>
+								<!-- Price -->
+								<td class="lblue">$4,000</td>
+								<!-- Quantity -->
+								<td><input type="number" min="1" max="10" value="3" class="quantity"/></td>
+								<!-- Total Price -->
+								<td class="green">$8,000</td>
+								<!-- Action -->
+								<td class="text-center">
+									<a href="#" class="cross" data-toggle="tooltip" data-placement="top" title="Remove">X</a>
+								</td>
+							</tr>
+							<tr>								
+								<!-- Data -->
+								<!-- ID-->
+								<td>6</td>
+								<!-- Image -->
+								<td><a href="#"><img src="img/ui-32/items/6.png" alt="" /></a></td>
+								<td>
+									<!-- Product Name -->
+									<h6><a href="#">Micromax</a></h6>
+								</td>
+								<!-- Price -->
+								<td class="lblue">$1,000</td>
+								<!-- Quantity -->
+								<td><input type="number" min="1" max="30" value="1" class="quantity"/></td>
+								<!-- Total Price -->
+								<td class="green">$2,000</td>
+								<!-- Action -->
+								<td class="text-center">
+									<a href="#" class="cross" data-toggle="tooltip" data-placement="top" title="Remove">X</a>
+								</td>
+							</tr>
+							<tr>
+								<!-- Data -->
+								<!-- Total-->
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td><strong>Total</strong></td>
+								<td class="red">$4,48,000</td>
+								<td></td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<!-- View Cart Ends -->
+								
+			</div>
+		</div>
+		<!-- UI - X Ends -->
+		
+		<!-- Javascript files -->
+		<!-- jQuery -->
+		<script src="js/jquery.js"></script>
+		<!-- Bootstrap JS -->
+		<script src="js/bootstrap.min.js"></script>
+		<!-- Placeholder JS -->
+		<script src="js/placeholder.js"></script>
+		<!-- Respond JS for IE8 -->
+		<script src="js/respond.min.js"></script>
+		<!-- HTML5 Support for IE -->
+		<script src="js/html5shiv.js"></script>
+		
+		<!-- jQuery page for this page -->
+		<!-- Stepper JS -->
+		<!-- Used For Quantity -->
+		<script src="js/jquery.fs.stepper.min.js"></script>
+		
+		<script type="text/javascript">
+			
+			<!-- Action -->
+			$(document).ready(function(){
+			  $(".ui-view-cart td > a.cross").click(function(e){  
+				e.preventDefault();
+				$(this).parents("tr").fadeOut(300);   //FadeOut Entire Row
+			  });
+			});
+			
+			<!-- ToolTip -->
+			$(function () {
+				$('.ui-view-cart a.cross').tooltip();  //Tooltip
+			});
+			
+			<!-- Stepper for quantity -->
+			$("input.quantity").stepper();
+			
+			<!-- Cart Dropdown -->
+			$(document).ready(function(){				 
+				var hidden = true;     //Display None
+				
+				<!-- Cart -->	
+				$(".ui-cart a").click(function (e) {   //OnClick
+					e.preventDefault();
+					if(hidden){
+						$(".ui-dd").fadeIn(500, function(){hidden = false;});    //FadeIn and Visible
+					}
+				});
+				
+				<!-- Html -->
+				$("html").click(function(){   //On Html Click
+					if(!hidden){
+						$(".ui-dd").fadeOut();   //Fade Out
+						hidden = true;
+					}
+				});
+				
+				<!-- Dropdown -->
+				$(".ui-dd").click(function(event){    //Dropdown Item click
+					event.stopPropagation();
+				});
+			});
+			
+		</script>
+	</body>	
+</html>

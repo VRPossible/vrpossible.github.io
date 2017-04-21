@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>UI Design</title>
+		<!-- Description, Keywords and Author -->
+		<meta name="description" content="Your description">
+		<meta name="keywords" content="Your,Keywords">
+		<meta name="author" content="ResponsiveWebInc">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<!-- Styles -->
+		<!-- Bootstrap CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<!-- Font awesome CSS -->
+		<link href="css/font-awesome.min.css" rel="stylesheet">
+		
+		
+		<!-- Main CSS -->
+		<link href="css/style-201.css" rel="stylesheet">
+				
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="#">
+	</head>
+	
+	<body>
+	
+		
+		<!-- UI - X Starts -->
+		<div class="ui-201">
+			<!-- Outer Starts -->
+			<div class="ui-outer">
+				<!-- Head -->
+				<a href="#" class="ui-head"><i class="fa fa-bars bg-red"></i><span>Fabinibus</span></a>
+				<!-- Navigation -->
+				<a href="#" class="ui-nav" data-toggle="tooltip" data-placement="right" title="Home"><i class="fa fa-home"></i> &nbsp;<span>Home</span></a>
+				<a href="#" class="ui-nav" data-toggle="tooltip" data-placement="right" title="About"><i class="fa fa-pagelines"></i> &nbsp;<span>About</span></a>
+				<a href="#" class="ui-nav" data-toggle="tooltip" data-placement="right" title="Gallery"><i class="fa fa-slack"></i> &nbsp;<span>Gallery</span></a>
+				<a href="#" class="ui-nav" data-toggle="tooltip" data-placement="right" title="Services"><i class="fa fa-link"></i> &nbsp;<span>Services</span></a>
+				<a href="#" class="ui-nav" data-toggle="tooltip" data-placement="right" title="Contact"><i class="fa fa-th-large"></i> &nbsp;<span>Contact</span></a>
+				<a href="#" class="ui-nav" data-toggle="tooltip" data-placement="right" title="Services"><i class="fa fa-link"></i> &nbsp;<span>Services</span></a>
+				<a href="#" class="ui-nav" data-toggle="tooltip" data-placement="right" title="Contact"><i class="fa fa-th-large"></i> &nbsp;<span>Contact</span></a>
+			</div>
+			<!-- Outer Ends -->
+		</div>
+		<!-- UI - X Ends -->
+		
+		<!-- Javascript files -->
+		<!-- jQuery -->
+		<script src="js/jquery.js"></script>
+		<!-- Bootstrap JS -->
+		<script src="js/bootstrap.min.js"></script>
+		<!-- Placeholder JS -->
+		<script src="js/placeholder.js"></script>
+		<!-- Respond JS for IE8 -->
+		<script src="js/respond.min.js"></script>
+		<!-- HTML5 Support for IE -->
+		<script src="js/html5shiv.js"></script>
+		<script>
+			<!-- ToolTip -->
+			$(function () {
+				$('.ui-nav').tooltip();
+			});
+			<!-- Animation -->
+			$(document).ready(function(){
+				<!-- On Click -->
+				$(".ui-201 a.ui-head").click(function(e){
+					e.preventDefault();
+					if(!($(this).parent(".ui-outer").hasClass("open"))){
+						$(this).parent(".ui-outer").addClass("open").animate({"width": "180px"});			//Expands outer block
+						$(this).parent(".ui-outer").find("a > span").animate({"opacity": "1"});   //Display Headings
+					}
+					else{
+						$(this).parent(".ui-outer").removeClass("open").animate({"width": "45px"});		//Reduces outer block
+						$(this).parent(".ui-outer").find("a > span").animate({"opacity": "0"});		//Hide Headings
+					}
+				});
+			});
+			
+		</script>
+	</body>	
+</html>

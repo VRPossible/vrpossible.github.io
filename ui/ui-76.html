@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>UI Design</title>
+		<!-- Description, Keywords and Author -->
+		<meta name="description" content="Your description">
+		<meta name="keywords" content="Your,Keywords">
+		<meta name="author" content="ResponsiveWebInc">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<!-- Styles -->
+		<!-- Bootstrap CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<!-- Font awesome CSS -->
+		<link href="css/font-awesome.min.css" rel="stylesheet">
+		
+		
+		<!-- Main CSS -->
+		<link href="css/style-76.css" rel="stylesheet">
+				
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="#">
+	</head>
+	
+	<body>
+	
+		
+		<!-- UI X -->
+		<div class="ui-76">
+			<!-- UI Head -->
+			<div class="ui-head">
+				<h2>Quick Settings</h2>
+			</div>
+			<!-- UI List -->
+			<div class="ui-list">
+				<!-- List item -->
+				<div class="list clearfix">
+					<!-- Heading -->
+					<h3><i class="fa fa-circle red"></i>&nbsp; Web Maintenance</h3>
+					<!-- Circle -->
+					<div class="circle bg-red active"></div>
+				</div>
+				<div class="list clearfix">
+					<!-- Heading -->
+					<h3><i class="fa fa-circle green"></i>&nbsp; Quick Settings</h3>
+					<!-- Circle -->
+					<div class="circle bg-green col"></div>
+				</div>
+				<div class="list clearfix">
+					<!-- Heading -->
+					<h3><i class="fa fa-circle lblue"></i>&nbsp; Uploads &amp; Downloads</h3>
+					<!-- Circle -->
+					<div class="circle bg-lblue active"></div>
+				</div>
+				<div class="list clearfix">
+					<!-- Heading -->
+					<h3><i class="fa fa-circle yellow"></i>&nbsp; Registration Form</h3>
+					<!-- Circle -->
+					<div class="circle bg-yellow col"></div>
+				</div>
+				<div class="list clearfix">
+					<!-- Heading -->
+					<h3><i class="fa fa-circle orange"></i>&nbsp; Payment Processing</h3>
+					<!-- Circle -->
+					<div class="circle bg-orange col"></div>
+				</div>
+			</div>
+			<!-- UI Foot -->
+			<div class="ui-foot clearfix">
+				<a href="#"><i class="fa fa-paperclip"></i></a> &nbsp; 
+				<a href="#"><i class="fa fa-camera"></i></a> &nbsp; 
+				<a href="#"><i class="fa fa-video-camera"></i></a>
+				<a href="#" class="pull-right btn btn-xs btn-white">Refresh</a>
+			</div>
+		</div>
+		
+		<!-- Javascript files -->
+		<!-- jQuery -->
+		<script src="js/jquery.js"></script>
+		<!-- Bootstrap JS -->
+		<script src="js/bootstrap.min.js"></script>
+		<!-- Placeholder JS -->
+		<script src="js/placeholder.js"></script>
+		<!-- Respond JS for IE8 -->
+		<script src="js/respond.min.js"></script>
+		<!-- HTML5 Support for IE -->
+		<script src="js/html5shiv.js"></script>
+		
+		<script>
+			
+			$(document).ready(function(){
+				$(".ui-76 .circle").click(function(){
+					if($(this).hasClass("active")){
+						$(this).addClass("col");
+						$(this).removeClass("active");
+					}
+					else{
+						$(this).removeClass("col");
+						$(this).addClass("active");
+					}
+				});
+			});
+			
+		</script>
+		
+	</body>	
+</html>

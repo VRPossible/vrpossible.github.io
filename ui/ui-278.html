@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>UI Design - Brave</title>
+		<!-- Description, Keywords and Author -->
+		<meta name="description" content="Your description">
+		<meta name="keywords" content="Your,Keywords">
+		<meta name="author" content="ResponsiveWebInc">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<!-- Styles -->
+		<!-- Bootstrap CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<!-- Font awesome CSS -->
+		<link href="css/font-awesome.min.css" rel="stylesheet">
+		
+		
+		<!-- Main CSS -->
+		<link href="css/style-278.css" rel="stylesheet">
+				
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="#">
+	</head>
+	
+	<body>
+	
+		
+		<!-- UI - X Starts -->
+		<div class="ui-278">
+			<div class="container-fluid">
+				<!-- Heading -->
+				<h2>FAQ <small>Frequently Asked Questions</h2>
+				<div class="row">
+					<div class="col-md-6 col-sm-6 col-xs-12">
+						<!-- Content -->
+						<div class="ui-content">
+							<!-- Heading -->
+							<h3><a href="#" class="clearfix"><i class="fa fa-apple red"></i><span>Ipsam Volup Tatem volup tatem quia volup tas sit asper natur.</span></a></h3>
+							<!-- Paragraph -->
+							<p>Ut enim ad minim veniam, quis nost rud  ulla mco labo ris nisi ut aliq uip ex ea comm odo conse sint occae cat cupid atat non proi dent quat.</p>
+						</div>
+						<!-- Content -->
+						<div class="ui-content">
+							<!-- Heading -->
+							<h3><a href="#" class="clearfix"><i class="fa fa-envelope lblue"></i><span>Nemo enim ipsam volupt atem quia volup tas sit asper natur aut.</span></a></h3>
+							<!-- Paragraph -->
+							<p>Ut enim ad minim veniam, quis nost rud  ulla mco labo ris nisi ut aliq uip ex ea comm odo conse sint occae cat cupid atat non proi dent quat.</p>
+						</div>
+						<!-- Content -->
+						<div class="ui-content">
+							<!-- Heading -->
+							<h3><a href="#" class="clearfix"><i class="fa fa-crop green"></i> <span>Neque porro quis quam est, qui dolo rem ipsum quia dolor sit.</span></a></h3>
+							<!-- Paragraph -->
+							<p>Ut enim ad minim veniam, quis nost rud  ulla mco labo ris nisi ut aliq uip ex ea comm odo conse sint occae cat cupid atat non proi dent quat.</p>
+						</div>
+						<!-- Content -->
+						<div class="ui-content">
+							<!-- Heading -->
+							<h3><a href="#" class="clearfix"><i class="fa fa-cube yellow"></i> <span> Ut enim ad mini ma veni am quis nostrum exerc itati onem.</span></a></h3>
+							<!-- Paragraph -->
+							<p>Ut enim ad minim veniam, quis nost rud  ulla mco labo ris nisi ut aliq uip ex ea comm odo conse sint occae cat cupid atat non proi dent quat.</p>
+						</div>
+					</div>
+					<div class="col-md-6 col-sm-6 col-xs-12">
+						<!-- Content -->
+						<div class="ui-content">
+							<!-- Heading -->
+							<h3><a href="#" class="clearfix"><i class="fa fa-cog purple"></i> <span>Quis autem vel eum iure repre hend erit qui in ea volup tatel.</span></a></h3>
+							<!-- Paragraph -->
+							<p>Ut enim ad minim veniam, quis nost rud  ulla mco labo ris nisi ut aliq uip ex ea comm odo conse sint occae cat cupid atat non proi dent quat.</p>
+						</div>
+						<!-- Content -->
+						<div class="ui-content">
+							<!-- Heading -->
+							<h3><a href="#" class="clearfix"><i class="fa fa-leaf green"></i> <span>At vero eos et accus amus et iusto odio dign issi mos duci.</span></a></h3>
+							<!-- Paragraph -->
+							<p>Ut enim ad minim veniam, quis nost rud  ulla mco labo ris nisi ut aliq uip ex ea comm odo conse sint occae cat cupid atat non proi dent quat.</p>
+						</div>
+						<!-- Content -->
+						<div class="ui-content">
+							<!-- Heading -->
+							<h3><a href="#" class="clearfix"><i class="fa fa-dropbox rose"></i> <span> Tempor ibus autem quibu sdam et aut offic iis debi tis aut.</span></a></h3>
+							<!-- Paragraph -->
+							<p>Ut enim ad minim veniam, quis nost rud  ulla mco labo ris nisi ut aliq uip ex ea comm odo conse sint occae cat cupid atat non proi dent quat.</p>
+						</div>
+						<!-- Content -->
+						<div class="ui-content">
+							<!-- Heading -->
+							<h3><a href="#" class="clearfix"><i class="fa fa-drupal blue"></i> <span>Ita que earum rerum hic tene tur a sapi ente dele ctus ut aut.</span></a></h3>
+							<!-- Paragraph -->
+							<p>Ut enim ad minim veniam, quis nost rud  ulla mco labo ris nisi ut aliq uip ex ea comm odo conse sint occae cat cupid atat non proi dent quat.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- UI - X Ends -->
+		
+		<!-- Javascript files -->
+		<!-- jQuery -->
+		<script src="js/jquery.js"></script>
+		<!-- Bootstrap JS -->
+		<script src="js/bootstrap.min.js"></script>
+		<!-- Placeholder JS -->
+		<script src="js/placeholder.js"></script>
+		<!-- Respond JS for IE8 -->
+		<script src="js/respond.min.js"></script>
+		<!-- HTML5 Support for IE -->
+		<script src="js/html5shiv.js"></script>
+		<script>
+			<!-- Sliding -->
+			$(document).ready(function(){
+				<!-- On Click Event -->
+				$(".ui-content h3 > a").click(function(e){
+					e.preventDefault();
+					if(!($(this).hasClass("active"))){
+						$(this).parents("h3").next("p").slideDown(350);		//Slide Down
+						$(this).addClass("active");					//Add Class
+					}
+					else{
+						$(this).parent("h3").next("p").slideUp(350);			//Slide Up
+						$(this).removeClass("active");					//Remove Class
+					}
+				});
+			
+			});
+		
+		</script>
+	</body>	
+</html>

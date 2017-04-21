@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>UI Design - Brave</title>
+		<!-- Description, Keywords and Author -->
+		<meta name="description" content="Your description">
+		<meta name="keywords" content="Your,Keywords">
+		<meta name="author" content="ResponsiveWebInc">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<!-- Styles -->
+		<!-- Bootstrap CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<!-- Font awesome CSS -->
+		<link href="css/font-awesome.min.css" rel="stylesheet">
+		
+		
+		<!-- Main CSS -->
+		<link href="css/style-326.css" rel="stylesheet">
+				
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="#">
+	</head>
+	
+	<body>
+	
+		
+		<!-- UI - X Starts -->
+		<div class="ui-326">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 col-sm-6 col-xs-6 col-mob">
+						<!-- Item -->
+						<ul class="list-unstyled ui-item bg-red">
+							<!-- Heading -->
+							<li><a href="#">HTML</a></li>
+							<!-- Heading -->
+							<li><a href="#">Java<span class="badge">144</span></a></li>
+							<!-- Heading -->
+							<li><a href="#">PHP<span class="badge">904</span></a></li>
+							<!-- Heading -->
+							<li><a href="#">CSS</a></li>
+							<!-- Heading -->
+							<li><a href="#">Python<span class="badge">989</span></a></li>
+							<!-- Heading -->
+							<li><a href="#">Asp.Net<span class="badge">400</span></a></li>
+							<!-- Heading -->
+							<li><a href="#">Joomla</a></li>
+							<!-- Heading -->
+							<li><a href="#">Drupal<span class="badge">300</span></a></li>
+						</ul>
+					</div>
+					
+					<div class="col-md-3 col-sm-6 col-xs-6 col-mob">
+						<!-- Item -->
+						<ul class="list-unstyled ui-item bg-lblue">
+							<!-- Heading -->
+							<li><a href="#">HTML</a></li>
+							<!-- Heading -->
+							<li><a href="#">Java<span class="badge">944</span></a></li>
+							<!-- Heading -->
+							<li><a href="#">PHP<span class="badge">504</span></a></li>
+							<!-- Heading -->
+							<li><a href="#">CSS</a></li>
+							<!-- Heading -->
+							<li><a href="#">Python<span class="badge">14</span></a></li>
+							<!-- Heading -->
+							<li><a href="#">Asp.Net<span class="badge">300</span></a></li>
+							<!-- Heading -->
+							<li><a href="#">Joomla</a></li>
+							<!-- Heading -->
+							<li><a href="#">Drupal<span class="badge">204</span></a></li>
+						</ul>
+					</div>
+					
+					<div class="col-md-3 col-sm-6 col-xs-6 col-mob">
+						<!-- Item -->
+						<ul class="list-unstyled ui-item bg-green">
+							<!-- Heading -->
+							<li><a href="#">HTML</a></li>
+							<!-- Heading -->
+							<li><a href="#">Java<span class="badge">100</span></a></li>
+							<!-- Heading -->
+							<li><a href="#">PHP<span class="badge">19</span></a></li>
+							<!-- Heading -->
+							<li><a href="#">CSS</a></li>
+							<!-- Heading -->
+							<li><a href="#">Python<span class="badge">900</span></a></li>
+							<!-- Heading -->
+							<li><a href="#">Asp.Net<span class="badge">144</span></a></li>
+							<!-- Heading -->
+							<li><a href="#">Joomla</a></li>
+							<!-- Heading -->
+							<li><a href="#">Drupal<span class="badge">200</span></a></li>
+						</ul>
+					</div>
+					
+					<div class="col-md-3 col-sm-6 col-xs-6 col-mob">
+						<!-- Item -->
+						<ul class="list-unstyled ui-item bg-yellow">
+							<!-- Heading -->
+							<li><a href="#">HTML</a></li>
+							<!-- Heading -->
+							<li><a href="#">Java<span class="badge">144</span></a></li>
+							<!-- Heading -->
+							<li><a href="#">PHP<span class="badge">344</span></a></li>
+							<!-- Heading -->
+							<li><a href="#">CSS</a></li>
+							<!-- Heading -->
+							<li><a href="#">Python<span class="badge">44</span></a></li>
+							<!-- Heading -->
+							<li><a href="#">Asp.Net<span class="badge">149</span></a></li>
+							<!-- Heading -->
+							<li><a href="#">Joomla</a></li>
+							<!-- Heading -->
+							<li><a href="#">Drupal<span class="badge">234</span></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- UI - X Ends -->
+		
+		<!-- Javascript files -->
+		<!-- jQuery -->
+		<script src="js/jquery.js"></script>
+		<!-- Bootstrap JS -->
+		<script src="js/bootstrap.min.js"></script>
+		<!-- Placeholder JS -->
+		<script src="js/placeholder.js"></script>
+		<!-- Respond JS for IE8 -->
+		<script src="js/respond.min.js"></script>
+		<!-- HTML5 Support for IE -->
+		<script src="js/html5shiv.js"></script>
+		<script>
+			<!-- Background Color -->
+			$(document).ready(function(){
+				$(".ui-326 .ui-item").each(function(){		//For Each Item
+					var value = 0;							
+					$(this).find("a").each(function(){		//For Each Heading					
+						$(this).css("background", 'rgba(0,0,0,'+ value +')');		//Background Color	
+						value = value + 0.03;	
+					});
+				});
+			});
+		</script>
+	</body>	
+</html>

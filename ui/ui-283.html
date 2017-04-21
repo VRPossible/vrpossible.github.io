@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>UI Design - Brave</title>
+		<!-- Description, Keywords and Author -->
+		<meta name="description" content="Your description">
+		<meta name="keywords" content="Your,Keywords">
+		<meta name="author" content="ResponsiveWebInc">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<!-- Styles -->
+		<!-- Bootstrap CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<!-- Font awesome CSS -->
+		<link href="css/font-awesome.min.css" rel="stylesheet">
+		
+		
+		<!-- Main CSS -->
+		<link href="css/style-283.css" rel="stylesheet">
+				
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="#">
+	</head>
+	
+	<body>
+	
+		
+		<!-- UI - X Starts -->
+	<div class="ui-x">
+			<!-- Image -->
+			<div class="ui-img">
+				<!-- Image -->
+				<img src="img/ui-283/pic.png" alt="" class="img-responsive" />					
+			</div>
+			<!-- Player -->
+			<div class="ui-player">
+				<!-- Icon -->
+				<div class="ui-icon clearfix">	
+					<!-- Random -->
+					<a href="#"><i class="fa fa-random"></i></a>
+					<!-- Backward -->
+					<a href="#"><i class="fa fa-backward"></i></a>
+					<!-- Play -->
+					<a href="#" class="ui-play"><i class="fa fa-play"></i></a>
+					<!-- Forward -->
+					<a href="#"><i class="fa fa-forward"></i></a>
+					<!-- Repeat -->
+					<a href="#"><i class="fa fa-repeat"></i></a>
+				</div>
+				<!-- Progress -->
+				<div class="ui-progress clearfix">
+					<!-- Heading -->
+					<h3>What's Going On, <span>Marvin Gaye</span> <a href="#"><i class="fa fa-heart"></i></a></h3>	
+					<!-- Timing -->	
+					<h5>3:45</h5>
+					<!-- Progress Bar -->
+					<div class="ui-pbar">
+						<div class="progress-bar bg-orange" style="width:60%"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- UI - X Ends -->
+		
+		<!-- Javascript files -->
+		<!-- jQuery -->
+		<script src="js/jquery.js"></script>
+		<!-- Bootstrap JS -->
+		<script src="js/bootstrap.min.js"></script>
+		<!-- Placeholder JS -->
+		<script src="js/placeholder.js"></script>
+		<!-- Respond JS for IE8 -->
+		<script src="js/respond.min.js"></script>
+		<!-- HTML5 Support for IE -->
+		<script src="js/html5shiv.js"></script>
+		<script>
+			<!-- On Click Event -->
+			$(document).ready(function(){
+				$(".ui-player a").click(function(e){
+					e.preventDefault();
+					if(!($(this).hasClass("active"))){
+						$(this).addClass("active");		//Add Class
+					}
+					else{
+						$(this).removeClass("active");	//Remove Class
+					}
+				});			
+			});
+		
+		</script>
+	</body>	
+</html>

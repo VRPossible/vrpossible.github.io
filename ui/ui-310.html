@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>UI Design - Brave</title>
+		<!-- Description, Keywords and Author -->
+		<meta name="description" content="Your description">
+		<meta name="keywords" content="Your,Keywords">
+		<meta name="author" content="ResponsiveWebInc">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<!-- Styles -->
+		<!-- Bootstrap CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<!-- Font awesome CSS -->
+		<link href="css/font-awesome.min.css" rel="stylesheet">
+		
+		
+		<!-- Main CSS -->
+		<link href="css/style-310.css" rel="stylesheet">
+				
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="#">
+	</head>
+	
+	<body>
+	
+		
+		<!-- UI - X Starts -->
+		<div class="ui-310">
+			<div class="container-fluid">
+				<!-- Item -->
+				<div class="ui-item clearfix">
+					<!-- Heading -->
+					<h3 class="bg-red"><a href="#">Bandwidth</a></h3>
+					<!-- Content -->
+					<div class="ui-content">
+						<!-- Heading -->
+						<h4 class="bg-red"  data-valuemax="20" ><span></span></h4>						
+					</div>
+				</div>	
+
+				<!-- Item -->
+				<div class="ui-item clearfix">
+					<!-- Heading -->
+					<h3 class="bg-lblue"><a href="#">Storage</a></h3>
+					<!-- Content -->
+					<div class="ui-content">
+						<!-- Heading -->
+						<h4 class="bg-lblue"  data-valuemax="50" ><span></span></h4>						
+					</div>
+				</div>
+
+				<!-- Item -->
+				<div class="ui-item clearfix">
+					<!-- Heading -->
+					<h3 class="bg-green"><a href="#">Users</a></h3>
+					<!-- Content -->
+					<div class="ui-content">
+						<!-- Heading -->
+						<h4 class="bg-green"  data-valuemax="70" ><span></span></h4>						
+					</div>
+				</div>
+
+				<!-- Item -->
+				<div class="ui-item clearfix">
+					<!-- Heading -->
+					<h3 class="bg-yellow"><a href="#">Visitors</a></h3>
+					<!-- Content -->
+					<div class="ui-content">
+						<!-- Heading -->
+						<h4 class="bg-yellow"  data-valuemax="30" ><span></span></h4>						
+					</div>
+				</div>		
+
+				<!-- Item -->
+				<div class="ui-item clearfix">
+					<!-- Heading -->
+					<h3 class="bg-purple"><a href="#">Emails</a></h3>
+					<!-- Content -->
+					<div class="ui-content">
+						<!-- Heading -->
+						<h4 class="bg-purple"  data-valuemax="45" ><span></span></h4>						
+					</div>
+				</div>	
+
+				<!-- Item -->
+				<div class="ui-item clearfix">
+					<!-- Heading -->
+					<h3 class="bg-rose"><a href="#">Basic</a></h3>
+					<!-- Content -->
+					<div class="ui-content">
+						<!-- Heading -->
+						<h4 class="bg-rose"  data-valuemax="80" ><span></span></h4>						
+					</div>
+				</div>	
+
+				<!-- Item -->
+				<div class="ui-item clearfix">
+					<!-- Heading -->
+					<h3 class="bg-blue"><a href="#">Others</a></h3>
+					<!-- Content -->
+					<div class="ui-content">
+						<!-- Heading -->
+						<h4 class="bg-blue" data-valuemax="37"><span></span></h4>						
+					</div>
+				</div>					
+			</div>
+		</div>
+		<!-- UI - X Ends -->
+		
+		<!-- Javascript files -->
+		<!-- jQuery -->
+		<script src="js/jquery.js"></script>
+		<!-- Bootstrap JS -->
+		<script src="js/bootstrap.min.js"></script>
+		<!-- Placeholder JS -->
+		<script src="js/placeholder.js"></script>
+		<!-- Respond JS for IE8 -->
+		<script src="js/respond.min.js"></script>
+		<!-- HTML5 Support for IE -->
+		<script src="js/html5shiv.js"></script>
+		<script>
+		<!-- Animation -->	
+		$(document).ready(function(){
+			<!-- For Each Heading -->
+			$(".ui-content h4").each(function(){
+				var max = $(this).attr("data-valuemax");
+				$(this).prop('Counter', 0 ).animate({ width: max + "%", Counter: max }, {			//Min value 0 and Max value attribute value	
+					duration: 2000,
+					easing: 'swing',
+					step: function () {
+					  $(this).children("span").text(Math.ceil(this.Counter) + "%");		//Count Number
+					}
+				});
+			});
+		});
+		</script>
+	</body>	
+</html>

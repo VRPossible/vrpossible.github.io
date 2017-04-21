@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>UI Design - Brave</title>
+		<!-- Description, Keywords and Author -->
+		<meta name="description" content="Your description">
+		<meta name="keywords" content="Your,Keywords">
+		<meta name="author" content="ResponsiveWebInc">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<!-- Styles -->
+		<!-- Bootstrap CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<!-- Font awesome CSS -->
+		<link href="css/font-awesome.min.css" rel="stylesheet">
+		
+		
+		<!-- Main CSS -->
+		<link href="css/style-285.css" rel="stylesheet">
+				
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="#">
+	</head>
+	
+	<body>
+	
+		
+		<!-- UI - X Starts -->
+		<div class="ui-x">
+			<!-- Main Heading -->
+			<h2><a href="#"> Select Menu </a></h2>
+			<!-- Item -->
+			<a href="#" class="ui-item clearfix">
+				<!-- Icon -->
+				<i class="fa fa-joomla"></i>
+				<!-- Details -->
+				<span class="ui-details">
+					<!-- Heading -->
+					<span>Finibus Bonorum</span>
+					<!-- Paragraph -->
+					<strong>Sed ut perspi ciatis unde omnis iste natus.</strong>
+				</span>
+			</a>
+			<!-- Item -->
+			<a href="#" class="ui-item clearfix">
+				<!-- Icon -->
+				<i class="fa fa-android"></i>
+				<!-- Details -->
+				<span class="ui-details">
+					<!-- Heading -->
+					<span>Ullam Corporis</span>
+					<!-- Paragraph -->
+					<strong>Sed ut perspi ciatis unde omnis iste natus.</strong>
+				</span>
+			</a>
+			<!-- Item -->
+			<a href="#" class="ui-item clearfix">
+				<!-- Icon -->
+				<i class="fa fa-apple"></i>
+				<!-- Details -->
+				<span class="ui-details">
+					<!-- Heading -->
+					<span>Minima Veniam</span>
+					<!-- Paragraph -->
+					<strong>Sed ut perspi ciatis unde omnis iste natus.</strong>
+				</span>
+			</a>
+			<!-- Item -->
+			<a href="#" class="ui-item clearfix">
+				<!-- Icon -->
+				<i class="fa fa-linux"></i>
+				<!-- Details -->
+				<span class="ui-details">
+					<!-- Heading -->
+					<span>Beatae Vitae</span>
+					<!-- Paragraph -->
+					<strong>Sed ut perspi ciatis unde omnis iste natus.</strong>
+				</span>
+			</a>
+			<!-- Item -->
+			<a href="#" class="ui-item clearfix">
+				<!-- Icon -->
+				<i class="fa fa-drupal"></i>
+				<!-- Details -->
+				<span class="ui-details">
+					<!-- Heading -->
+					<span>Quasi Architec</span>
+					<!-- Paragraph -->
+					<strong>Sed ut perspi ciatis unde omnis iste natus.</strong>
+				</span>
+			</a>
+		</div>
+		<!-- UI - X Ends -->
+		
+		<!-- Javascript files -->
+		<!-- jQuery -->
+		<script src="js/jquery.js"></script>
+		<!-- Bootstrap JS -->
+		<script src="js/bootstrap.min.js"></script>
+		<!-- Placeholder JS -->
+		<script src="js/placeholder.js"></script>
+		<!-- Respond JS for IE8 -->
+		<script src="js/respond.min.js"></script>
+		<!-- HTML5 Support for IE -->
+		<script src="js/html5shiv.js"></script>
+		<script>
+			<!-- On Click Event -->
+			$(document).ready(function(){
+				$(".ui-x a.ui-item").click(function(e){
+					e.preventDefault();
+					if(!($(this).hasClass("active"))){
+						$(this).addClass("active");					//Add Class
+						$(this).children("i").addClass("bg-lblue");		//Add Class
+					}
+					else{
+						$(this).removeClass("active");					//Remove Class
+						$(this).children("i").removeClass("bg-lblue");		//Remove Class
+					}
+				});
+			
+			
+			});
+		</script>
+	</body>	
+</html>

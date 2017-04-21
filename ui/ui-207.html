@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>UI Design</title>
+		<!-- Description, Keywords and Author -->
+		<meta name="description" content="Your description">
+		<meta name="keywords" content="Your,Keywords">
+		<meta name="author" content="ResponsiveWebInc">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<!-- Styles -->
+		<!-- Bootstrap CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<!-- Font awesome CSS -->
+		<link href="css/font-awesome.min.css" rel="stylesheet">
+		
+		
+		<!-- Main CSS -->
+		<link href="css/style-207.css" rel="stylesheet">
+				
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="#">
+	</head>
+	
+	<body>
+	
+		
+		<!-- UI - X Starts -->
+		<div class="ui-207">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 col-sm-6 col-xs-6 col-mob">
+						<!-- Item -->
+						<div class="ui-item">
+							<div class="ui-chart bg-red">
+								<!-- Plot Chart -->
+								<div class="plot-chart" id="chart-one"></div>
+							</div>
+							<!-- Details -->
+							<div class="ui-details clearfix">
+								<!-- Heading -->
+								<h4><a href="#">Finibus</a></h4>
+								<!-- Small Heading -->
+								<h6><a href="#">visitors</a> <span>$2,000 <i class="fa fa-angle-double-up red"></i></span></h6>
+								<!-- Small Heading -->
+								<h6><a href="#">members</a> <span>$6,000 <i class="fa fa-angle-double-down green"></i></span></h6>
+								<!-- Small Heading -->
+								<h6><a href="#">users</a> <span>$3,000 <i class="fa fa-angle-double-down green"></i></span></h6>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-6 col-mob">
+						<!-- Item -->
+						<div class="ui-item">
+							<div class="ui-chart bg-lblue">
+								<!-- Plot Chart -->
+								<div class="plot-chart" id="chart-two"></div>
+							</div>
+							<!-- Details -->
+							<div class="ui-details clearfix">
+								<!-- Heading -->
+								<h4><a href="#">Aperiam</a></h4>
+								<!-- Small Heading -->
+								<h6><a href="#">visitors</a> <span>$1,000 <i class="fa fa-angle-double-up red"></i></span></h6>
+								<!-- Small Heading -->
+								<h6><a href="#">members</a> <span>$4,000 <i class="fa fa-angle-double-up red"></i></span></h6>
+								<!-- Small Heading -->
+								<h6><a href="#">users</a> <span>$7,000 <i class="fa fa-angle-double-down green"></i></span></h6>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-6 col-mob">
+						<!-- Item -->
+						<div class="ui-item">
+							<div class="ui-chart bg-green">
+								<!-- Plot Chart -->
+								<div class="plot-chart" id="chart-three"></div>
+							</div>
+							<!-- Details -->
+							<div class="ui-details clearfix">
+								<!-- Heading -->
+								<h4><a href="#">Beatae</a></h4>
+								<!-- Small Heading -->
+								<h6><a href="#">visitors</a> <span>$9,000 <i class="fa fa-angle-double-down green"></i></span></h6>
+								<!-- Small Heading -->
+								<h6><a href="#">members</a> <span>$2,000 <i class="fa fa-angle-double-up red"></i></span></h6>
+								<!-- Small Heading -->
+								<h6><a href="#">users</a> <span>$8,000 <i class="fa fa-angle-double-down green"></i> </span></h6>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-6 col-mob">
+						<!-- Item -->
+						<div class="ui-item">
+							<div class="ui-chart bg-yellow">
+								<!-- Plot Chart -->
+								<div class="plot-chart" id="chart-four"></div>
+							</div>
+							<!-- Details -->
+							<div class="ui-details clearfix">
+								<!-- Heading -->
+								<h4><a href="#">Malarous</a></h4>
+								<!-- Small Heading -->
+								<h6><a href="#">visitors</a> <span>$1,000 <i class="fa fa-angle-double-up red"></i></span></h6>
+								<!-- Small Heading -->
+								<h6><a href="#">members</a> <span>$5,000  <i class="fa fa-angle-double-down green"></i></span></h6>
+								<!-- Small Heading -->
+								<h6><a href="#">users</a> <span>$9,000 <i class="fa fa-angle-double-up red"></i> </span></h6>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>	
+		</div>
+		<!-- UI - X Ends -->
+		
+		<!-- Javascript files -->
+		<!-- jQuery -->
+		<script src="js/jquery.js"></script>
+		<!-- Bootstrap JS -->
+		<script src="js/bootstrap.min.js"></script>
+		<!-- Flot chart -->
+		<script src="js/jquery.flot.min.js"></script>     
+		<script src="js/jquery.flot.resize.min.js"></script>
+		<!-- Placeholder JS -->
+		<script src="js/placeholder.js"></script>
+		<!-- Respond JS for IE8 -->
+		<script src="js/respond.min.js"></script>
+		<!-- HTML5 Support for IE -->
+		<script src="js/html5shiv.js"></script>
+		<script>
+		/* plot js */
+	
+		<!-- Plot Chart One -->
+		$(function() {
+			/* Chart data #1 */
+			var d1 = [[0, 0],[1, 2.5], [2, 3.6], [3, 4.7], [4, 5.5],[5, 1.5], [6, 6.5]];
+
+			var options = {
+				series: {
+				  lines: {
+					 show: true, fill: false, lineWidth:2, fillColor: { colors: [ { opacity: 0 }, { opacity: 0}] }
+				  },
+				  points: {
+					 show: true, fill: true, lineWidth:1, radius:3, fillColor: "#fff"
+				  },
+				  shadowSize: 0
+			   },
+				colors :["#fff"],
+			   grid: {
+				  hoverable: true, color: "#fff", backgroundColor:"#f75353" ,borderWidth:1, borderColor:"rgba(255,255,255,0.5)", labelMargin:10
+			   },
+			   xaxis: {
+				  ticks:6,
+				  font: {
+						size: 11,
+						color: ["#fff"]
+					}
+			   },
+			   yaxis: {
+				  ticks: 4,
+				  font: {
+						size: 11,
+						color: ["#fff"]
+					}
+			   }, 
+			   legend: {
+				  backgroundOpacity:0,
+				  noColumns:1,
+				  labelBoxBorderColor: "rgba(0,0,0,0)"
+			   }
+			};
+			
+			$("<div id='tooltip'></div>").css({
+				position: "absolute",
+				display: "none",
+				"border-radius":"5px",
+				padding: "0px 5px",
+				color:"#565656",
+				"font-size":"11px",
+				"background-color": "#fff",
+				"border":"1px solid #ddd"
+			}).appendTo("body");
+
+			$("#chart-one").bind("plothover", function (event, pos, item) {
+					if (item) {
+						var x = item.datapoint[0].toFixed(2),
+							y = item.datapoint[1].toFixed(2);
+
+						$("#tooltip").html(x + ", " + y)
+							.css({top: item.pageY+5, left: item.pageX+5})
+							.fadeIn(200);
+					} else {
+						$("#tooltip").hide();
+					}
+			});
+
+			$.plot("#chart-one", [ {data: d1,  label: "Revenue"} ], options);
+		});
+		
+		<!-- Plot Chart Two -->
+		$(function() {
+			/* Chart data #1 */
+			var d1 = [[0, 2.5],[1, 8.5], [2, 1.3], [3, 4.7], [4, 5.5],[5, 5.5], [6, 6.5]];
+
+			var options = {
+				series: {
+				  lines: {
+					 show: true, fill: false, lineWidth:2, fillColor: { colors: [ { opacity: 0 }, { opacity: 0}] }
+				  },
+				  points: {
+					 show: true, fill: true, lineWidth:1, radius:3, fillColor: "#fff"
+				  },
+				  shadowSize: 0
+			   },
+				colors :["#fff"],
+			   grid: {
+				  hoverable: true, color: "#fff", backgroundColor:"#32c8de" ,borderWidth:1, borderColor:"rgba(255,255,255,0.5)", labelMargin:10
+			   },
+			   xaxis: {
+				  ticks:6,
+				  font: {
+						size: 11,
+						color: ["#fff"]
+					}
+			   },
+			   yaxis: {
+				  ticks: 4,
+				  font: {
+						size: 11,
+						color: ["#fff"]
+					}
+			   }, 
+			   legend: {
+				  backgroundOpacity:0,
+				  noColumns:1,
+				  labelBoxBorderColor: "rgba(0,0,0,0)"
+			   }
+			};
+			
+			$("<div id='tooltip'></div>").css({
+				position: "absolute",
+				display: "none",
+				"border-radius":"5px",
+				padding: "0px 5px",
+				color:"#565656",
+				"font-size":"11px",
+				"background-color": "#fff",
+				"border":"1px solid #ddd"
+			}).appendTo("body");
+
+			$("#chart-two").bind("plothover", function (event, pos, item) {
+					if (item) {
+						var x = item.datapoint[0].toFixed(2),
+							y = item.datapoint[1].toFixed(2);
+
+						$("#tooltip").html(x + ", " + y)
+							.css({top: item.pageY+5, left: item.pageX+5})
+							.fadeIn(200);
+					} else {
+						$("#tooltip").hide();
+					}
+			});
+
+			$.plot("#chart-two", [ {data: d1,  label: "Revenue"} ], options);
+		});
+		
+		<!-- Plot Chart Three -->
+		$(function() {
+			/* Chart data #1 */
+			var d1 = [[0, 0.8],[1, 6.5], [2, 3], [3, 7], [4, 5],[5, 5.5], [6, 5]];
+
+			var options = {
+				series: {
+				  lines: {
+					 show: true, fill: false, lineWidth:2, fillColor: { colors: [ { opacity: 0 }, { opacity: 0}] }
+				  },
+				  points: {
+					 show: true, fill: true, lineWidth:1, radius:3, fillColor: "#fff"
+				  },
+				  shadowSize: 0
+			   },
+				colors :["#fff"],
+			   grid: {
+				  hoverable: true, color: "#fff", backgroundColor:"#51d466" ,borderWidth:1, borderColor:"rgba(255,255,255,0.5)", labelMargin:10
+			   },
+			   xaxis: {
+				  ticks:6,
+				  font: {
+						size: 11,
+						color: ["#fff"]
+					}
+			   },
+			   yaxis: {
+				  ticks: 4,
+				  font: {
+						size: 11,
+						color: ["#fff"]
+					}
+			   }, 
+			   legend: {
+				  backgroundOpacity:0,
+				  noColumns:1,
+				  labelBoxBorderColor: "rgba(0,0,0,0)"
+			   }
+			};
+			
+			$("<div id='tooltip'></div>").css({
+				position: "absolute",
+				display: "none",
+				"border-radius":"5px",
+				padding: "0px 5px",
+				color:"#565656",
+				"font-size":"11px",
+				"background-color": "#fff",
+				"border":"1px solid #ddd"
+			}).appendTo("body");
+
+			$("#chart-three").bind("plothover", function (event, pos, item) {
+					if (item) {
+						var x = item.datapoint[0].toFixed(2),
+							y = item.datapoint[1].toFixed(2);
+
+						$("#tooltip").html(x + ", " + y)
+							.css({top: item.pageY+5, left: item.pageX+5})
+							.fadeIn(200);
+					} else {
+						$("#tooltip").hide();
+					}
+			});
+
+			$.plot("#chart-three", [ {data: d1,  label: "Revenue"} ], options);
+		});
+		
+		<!-- Plot Chart Four -->
+		$(function() {
+			/* Chart data */
+			var d1 = [[0, 6.5],[1, 5.5], [2, 1.6], [3, 5.7], [4, 6.5],[5, 1.5], [6, 6.5]];
+
+			var options = {
+				series: {
+				  lines: {
+					 show: true, fill: false, lineWidth:2, fillColor: { colors: [ { opacity: 0 }, { opacity: 0}] }
+				  },
+				  points: {
+					 show: true, fill: true, lineWidth:1, radius:3, fillColor: "#fff"
+				  },
+				  shadowSize: 0
+			   },
+				colors :["#fff"],
+			   grid: {
+				  hoverable: true, color: "#fff", backgroundColor:"#fcd419" ,borderWidth:1, borderColor:"rgba(255,255,255,0.5)", labelMargin:10
+			   },
+			   xaxis: {
+				  ticks:6,
+				  font: {
+						size: 11,
+						color: ["#fff"]
+					}
+			   },
+			   yaxis: {
+				  ticks: 4,
+				  font: {
+						size: 11,
+						color: ["#fff"]
+					}
+			   }, 
+			   legend: {
+				  backgroundOpacity:0,
+				  noColumns:1,
+				  labelBoxBorderColor: "rgba(0,0,0,0)"
+			   }
+			};
+			
+			$("<div id='tooltip'></div>").css({
+				position: "absolute",
+				display: "none",
+				"border-radius":"5px",
+				padding: "0px 5px",
+				color:"#565656",
+				"font-size":"11px",
+				"background-color": "#fff",
+				"border":"1px solid #ddd"
+			}).appendTo("body");
+
+			$("#chart-four").bind("plothover", function (event, pos, item) {
+					if (item) {
+						var x = item.datapoint[0].toFixed(2),
+							y = item.datapoint[1].toFixed(2);
+
+						$("#tooltip").html(x + ", " + y)
+							.css({top: item.pageY+5, left: item.pageX+5})
+							.fadeIn(200);
+					} else {
+						$("#tooltip").hide();
+					}
+			});
+			
+			$.plot("#chart-four", [ {data: d1,  label: "Revenue"} ], options);
+		});
+		</script>
+	</body>	
+</html>

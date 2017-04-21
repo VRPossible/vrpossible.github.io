@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>UI Design</title>
+		<!-- Description, Keywords and Author -->
+		<meta name="description" content="Your description">
+		<meta name="keywords" content="Your,Keywords">
+		<meta name="author" content="ResponsiveWebInc">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<!-- Styles -->
+		<!-- Bootstrap CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<!-- Font awesome CSS -->
+		<link href="css/font-awesome.min.css" rel="stylesheet">
+		
+		
+		<!-- Main CSS -->
+		<link href="css/style-316.css" rel="stylesheet">
+				
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="#">
+	</head>
+	
+	<body>
+	
+		
+		<!-- UI # -->
+		<div class="ui-316">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-6 col-sm-6 col-xs-12">
+						<!-- Item Starts -->
+						<div class="db-item">
+							<!-- Heading -->
+							<h5><i class="fa fa-pie-chart red"></i>&nbsp; Latest Orders</h5>
+							<!-- Pie Chart -->
+							<div class="db-pie-chart">
+								<!-- Pie chart placeholder -->
+								<div id="db-pie-chart1"></div>
+							</div>
+							<!-- Label -->
+							<div class="db-label">
+								<!-- Table Responsive -->
+								<div class="table-responsive">
+									<!-- Table -->
+									<table class="table">
+										<tr>
+											<!-- Data -->
+											<td>
+												<!-- Icon And Label -->
+												<i class="fa fa-square red"></i><span> &nbsp; Visitors</span>
+											</td>
+											<td>
+												<!-- Percentage -->
+												<span>19%</span>
+											</td>										
+										</tr>
+										<tr>
+											<!-- Data -->
+											<td>
+												<!-- Icon and Label -->
+												<i class="fa fa-square green"></i><span> &nbsp; Earnings</span>
+											</td>
+											<td>
+												<!-- Percentage -->
+												<span>23%</span>
+											</td>										
+										</tr>
+										<tr>
+											<!-- Data -->
+											<td>
+												<!-- Icon and Label -->
+												<i class="fa fa-square lblue"></i><span> &nbsp; Members</span>
+											</td>
+											<td>
+												<!-- Percentage -->
+												<span>32%</span>
+											</td>										
+										</tr>
+										<tr>
+											<!-- Data -->
+											<td>
+												<!-- Icon and Label -->
+												<i class="fa fa-square yellow"></i><span> &nbsp; Orders</span>
+											</td>
+											<td>
+												<!-- Percentage -->
+												<span>26%</span>
+											</td>										
+										</tr>
+									</table>
+								</div>
+							</div>
+							<div class="clearfix"></div>
+						</div>	
+						<!-- Item Ends -->	
+					</div>
+					
+					<div class="col-md-6 col-sm-6 col-xs-12">
+						<!-- Item Starts -->
+						<div class="db-item">
+							<!-- Heading -->
+							<h5><i class="fa fa-pie-chart green"></i>&nbsp; Top Visitors</h5>
+							<!-- Pie Chart -->
+							<div class="db-pie-chart">
+								<!-- Pie chart placeholder -->
+								<div id="db-pie-chart2"></div>
+							</div>
+							<!-- Label -->
+							<div class="db-label">
+								<!-- Table Responsive -->
+								<div class="table-responsive">
+									<!-- Table -->
+									<table class="table">
+										<tr>
+											<!-- Data -->
+											<td>
+												<!-- Icon and Label -->
+												<i class="fa fa-square red"></i><span> &nbsp; Visitors</span>
+											</td>
+											<td>
+												<!-- Percentage -->
+												<span>27%</span>
+											</td>										
+										</tr>
+										<tr>
+											<!-- Data -->
+											<td>
+												<!-- Icon and Label -->
+												<i class="fa fa-square green"></i><span> &nbsp; Earnings</span>
+											</td>
+											<td>
+												<!-- Percentage -->
+												<span>15%</span>
+											</td>										
+										</tr>
+										<tr>
+											<!-- Data -->
+											<td>
+												<!-- Icon and Label -->
+												<i class="fa fa-square lblue"></i><span> &nbsp; Members</span>
+											</td>
+											<td>
+												<!-- Percentage -->
+												<span>25%</span>
+											</td>										
+										</tr>
+										<tr>
+											<!-- Data -->
+											<td>
+												<!-- Icon and Label -->
+												<i class="fa fa-square yellow"></i><span> &nbsp; Orders</span>
+											</td>
+											<td>
+												<!-- Percentage -->
+												<span>32%</span>
+											</td>										
+										</tr>
+									</table>
+								</div>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+						<!-- Item Ends -->
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Javascript files -->
+		<!-- jQuery -->
+		<script src="js/jquery.js"></script>
+		<!-- Bootstrap JS -->
+		<script src="js/bootstrap.min.js"></script>
+		<!-- jQuery Flot -->
+		<script src="js/jquery.flot.min.js"></script>
+		<script src="js/jquery.flot.pie.min.js"></script>
+		<script src="js/jquery.flot.resize.min.js"></script>
+		<!-- Placeholder JS -->
+		<script src="js/placeholder.js"></script>
+		<!-- Respond JS for IE8 -->
+		<script src="js/respond.min.js"></script>
+		<!-- HTML5 Support for IE -->
+		<script src="js/html5shiv.js"></script>
+		
+		<script type="text/javascript">
+			<!-- Pie chart start -->	
+			$(function () {
+				<!-- Data -->
+				var data = [
+					{label: "Visitors", data:20},
+					{label: "Earnings", data: 25},
+					{label: "Members", data: 35},
+					{label: "Orders", data: 28}
+				];
+				<!-- Placeholder -->	
+				var placeholder = $("#db-pie-chart1");
+				placeholder.unbind();
+				
+				<!-- Plot -->				
+				$.plot(placeholder, data, {
+					<!-- Series -->
+					series: {
+						<!-- Pie -->
+						pie: { 
+							show: true,
+							innerRadius:0.4, //Inner Radius
+							<!-- Label -->
+							label: {
+								show: true,
+								 radius: 2.3/4, //Radius
+								 <!-- Formatter -->
+								 formatter: function(label, series){
+									 return '<div><span  style="font-size:8pt;color:white;">' +Math.round(series.percent)+'%</span></div>';
+								}
+							}
+						}
+					},
+					<!-- Colors -->
+					colors: ["#f75353","#51d466","#32c8de","#fcd419"],
+					<!-- Grid -->
+					grid: {hoverable: true},
+					<!-- Legend -->	
+					legend: {
+						show: false
+					}
+				});
+			});
+			<!-- Pie chart ends -->
+			
+			
+			<!-- Pie chart start -->		
+			$(function () {
+			
+				<!-- Data -->
+				var data = [
+					{label: "Visitors", data:80},
+					{label: "Earnings", data: 45},
+					{label: "Member", data: 75},
+					{label: "Orders", data: 95}
+				];
+				
+				<!-- Palceholder -->
+				var placeholder = $("#db-pie-chart2");
+				placeholder.unbind();
+				
+				<!-- Plot -->	
+				$.plot(placeholder, data, {
+					<!-- Series -->
+					series: {
+						<!-- Pie -->
+						pie: { 
+							show: true,
+							innerRadius:0.4,     // InnerRadius
+							<!-- Label -->
+							label: {
+								show: true,
+								 radius: 2.3/4,   // Radius
+								 <!-- Formatter -->
+								 formatter: function(label, series){
+									 return '<div><span  style="font-size:8pt;text-align:center;color:white;">' +Math.round(series.percent)+'%</span></div>';
+								}
+							}
+						}
+					},
+					<!-- Colors -->
+					colors: ["#f75353","#51d466","#32c8de","#fcd419"],
+					<!-- Grid -->
+					grid: {hoverable: true},
+					<!-- Legend -->
+					legend: {
+						show: false
+					}
+				});
+			});
+			<!-- Pie chart ends -->
+		</script>
+		
+	</body>	
+</html>

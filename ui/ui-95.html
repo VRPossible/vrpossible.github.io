@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>UI Design</title>
+		<!-- Description, Keywords and Author -->
+		<meta name="description" content="Your description">
+		<meta name="keywords" content="Your,Keywords">
+		<meta name="author" content="ResponsiveWebInc">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<!-- Styles -->
+		<!-- Bootstrap CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<!-- Font awesome CSS -->
+		<link href="css/font-awesome.min.css" rel="stylesheet">
+		
+		
+		<!-- Main CSS -->
+		<link href="css/style-95.css" rel="stylesheet">
+				
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="#">
+	</head>
+	
+	<body>
+	
+		
+		<!-- UI X -->
+		<div class="ui-95">
+		
+			<div class="container">
+			
+				<div class="row">
+					<div class="col-md-3 col-sm-6">
+						<div class="ui-item">
+							<!-- Image -->
+							<a href="#"><img src="img/ui-95/1.jpg" class="img-responsive" alt=""/></a>
+							<!-- Item Title -->
+							<h3><a href="#">Helen Green</a></h3>
+							<!-- Designation -->
+							<h4>Quality Analyst</h4>
+							<!-- Icon with click function -->
+							<a href="#" class="bg-red fclick"><i class="fa fa-user"></i></a>
+							<!-- Social media Starts -->
+							<div class="ui-social">
+								<a href="#"><i class="fa fa-facebook bg-blue"></i></a>
+								<a href="#"><i class="fa fa-twitter bg-lblue"></i></a>
+								<a href="#"><i class="fa fa-google-plus bg-red"></i></a>
+							</div>
+							<!-- Social media Ends -->
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<div class="ui-item">
+							<a href="#"><img src="img/ui-95/2.jpg" class="img-responsive" alt=""/></a>
+							<h3><a href="#">Carla Briggs</a></h3>
+							<h4>Project Manager</h4>
+							<a href="#" class="bg-green fclick"><i class="fa fa-user"></i></a> 
+							<!-- Social media Starts -->
+							<div class="ui-social">
+								<a href="#"><i class="fa fa-facebook bg-blue"></i></a>
+								<a href="#"><i class="fa fa-twitter bg-lblue"></i></a>
+								<a href="#"><i class="fa fa-google-plus bg-red"></i></a>
+							</div>
+							<!-- Social media Ends -->
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<div class="ui-item">
+							<a href="#"><img src="img/ui-95/3.jpg" class="img-responsive" alt=""/></a>
+							<h3><a href="#">Myra Flowers</a></h3>
+							<h4>Team Lead</h4>
+							<a href="#" class="bg-yellow fclick"><i class="fa fa-user"></i></a>
+							<!-- Social media Starts -->
+							<div class="ui-social">
+								<a href="#"><i class="fa fa-facebook bg-blue"></i></a>
+								<a href="#"><i class="fa fa-twitter bg-lblue"></i></a>
+								<a href="#"><i class="fa fa-google-plus bg-red"></i></a>
+							</div>
+							<!-- Social media Ends -->
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<div class="ui-item">
+							<a href="#"><img src="img/ui-95/4.jpg" class="img-responsive" alt=""/></a>
+							<h3><a href="#">Brad Webster</a></h3>
+							<h4>Senior Executive</h4>
+							<a href="#" class="bg-lblue fclick"><i class="fa fa-user"></i></a> 
+							<!-- Social media Starts -->
+							<div class="ui-social">
+								<a href="#"><i class="fa fa-facebook bg-blue"></i></a>
+								<a href="#"><i class="fa fa-twitter bg-lblue"></i></a>
+								<a href="#"><i class="fa fa-google-plus bg-red"></i></a>
+							</div>
+							<!-- Social media Ends -->
+						</div>
+					</div>
+				</div>
+			
+			</div>
+		
+		</div>
+		
+		<!-- Javascript files -->
+		<!-- jQuery -->
+		<script src="js/jquery.js"></script>
+		<!-- Bootstrap JS -->
+		<script src="js/bootstrap.min.js"></script>
+		<!-- Placeholder JS -->
+		<script src="js/placeholder.js"></script>
+		<!-- Respond JS for IE8 -->
+		<script src="js/respond.min.js"></script>
+		<!-- HTML5 Support for IE -->
+		<script src="js/html5shiv.js"></script>
+		
+		<script>
+		
+			$(".ui-item a").click(function(e){
+				e.preventDefault();
+				$(this).next(".ui-social").fadeToggle();
+			 }); 
+			 
+		</script>
+		
+	</body>	
+</html>

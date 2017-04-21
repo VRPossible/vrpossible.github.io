@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>UI Design</title>
+		<!-- Description, Keywords and Author -->
+		<meta name="description" content="Your description">
+		<meta name="keywords" content="Your,Keywords">
+		<meta name="author" content="ResponsiveWebInc">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<!-- Styles -->
+		<!-- Bootstrap CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<!-- Font awesome CSS -->
+		<link href="css/font-awesome.min.css" rel="stylesheet">
+		
+		
+		<!-- Main CSS -->
+		<link href="css/style-173.css" rel="stylesheet">
+				
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="#">
+	</head>
+	
+	<body>
+		
+		<!-- UI # -->
+		<div class="ui-173">
+		
+			<!-- Button -->
+			<div class="ui-btn">
+				<i class="fa fa-bars"></i>
+			</div>
+			<div class="ui-outer bg-lblue">
+				<!-- UI Content -->
+				<div class="ui-content clearfix">
+					<a href="#" class="ui-close">x</a>			
+					<!-- Heading -->
+					<h4><i class="fa fa-male"></i> Visitors</h4>
+					<h3>2,40,300</h3>
+					
+					<h4><i class="fa fa-download"></i> Downlaods</h4>
+					<h3>1,39,403</h3>
+					
+					<h4><i class="fa fa-dollar"></i> Income</h4>
+					<h3>$2,300</h3>
+					
+					<h4><i class="fa fa-user"></i> Members</h4>
+					<h3>43,300</h3>
+					
+					<h4><i class="fa fa-shopping-cart"></i> Orders</h4>
+					<h3>4,300</h3>
+					
+					<h4><i class="fa fa-download"></i> Bource Rate</h4>
+					<h3>55%</h3>
+				
+				</div>
+			</div>
+		</div>
+		
+		<!-- Javascript files -->
+		<!-- jQuery -->
+		<script src="js/jquery.js"></script>
+		<!-- Bootstrap JS -->
+		<script src="js/bootstrap.min.js"></script>
+		<!-- Placeholder JS -->
+		<script src="js/placeholder.js"></script>
+		<!-- Respond JS for IE8 -->
+		<script src="js/respond.min.js"></script>
+		<!-- HTML5 Support for IE -->
+		<script src="js/html5shiv.js"></script>
+		
+		<script>
+			
+			$(document).ready(function(){
+				$("a.ui-close").click(function(e){
+					e.preventDefault();
+					$(this).parents(".ui-outer").removeClass("open").fadeOut(200);	
+				});
+				$(".ui-173 .ui-btn").click(function(){
+					var $content = $(".ui-outer");
+					if($content.hasClass("open")){
+						$content.fadeOut(200);
+						$content.removeClass("open");
+					}
+					else{
+						$content.fadeIn(200);
+						$content.addClass("open");
+					}
+				});
+			});
+			
+		</script>
+		
+	</body>	
+</html>

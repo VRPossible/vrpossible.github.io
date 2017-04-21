@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>UI Design</title>
+		<!-- Description, Keywords and Author -->
+		<meta name="description" content="Your description">
+		<meta name="keywords" content="Your,Keywords">
+		<meta name="author" content="ResponsiveWebInc">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<!-- Styles -->
+		<!-- Bootstrap CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<!-- Font awesome CSS -->
+		<link href="css/font-awesome.min.css" rel="stylesheet">
+		
+		
+		<!-- Main CSS -->
+		<link href="css/style-31.css" rel="stylesheet">
+				
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="#">
+	</head>
+	
+	<body>
+	
+		
+		<!-- UI - X Starts -->
+		<div class="ui-31">
+			<div class="container-fluid">
+				<!-- Heading -->
+				<h4><i class="fa fa-cogs lblue"></i>&nbsp; Plugins <small>Install &amp; Uninstall Plugins</small></h4>
+				
+				<hr />
+				
+				<div class="row">
+					<div class="col-md-3 col-sm-3 col-xs-6">
+						<!-- Item -->
+						<div class="ui-item">
+							<!-- Icon -->
+							<a href="#"><i class="fa fa-dropbox"></i></a>
+							<!-- Heading -->	
+							<a href="#"><span>Dropbox</span></a>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-3 col-xs-6">
+						<!-- Item -->
+						<div class="ui-item">
+							<!-- Icon -->
+							<a href="#" class="active"><i class="fa fa-delicious"></i></a>	
+							<!-- Heading -->
+							<a href="#" class="active"><span>Delicious</span></a>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-3 col-xs-6">
+						<!-- Item -->
+						<div class="ui-item">
+							<!-- Icon -->
+							<a href="#"><i class="fa fa-linux"></i></a>
+							<!-- Heading -->	
+							<a href="#"><span>Linux</span></a>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-3 col-xs-6">
+						<!-- Item -->
+						<div class="ui-item">
+							<!-- Icon -->
+							<a href="#"><i class="fa fa-pagelines"></i></a>
+							<!-- Heading -->	
+							<a href="#"><span>PageLines</span></a>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-3 col-xs-6">
+						<!-- Item -->
+						<div class="ui-item">
+							<!-- Icon -->
+							<a href="#" class="active"><i class="fa fa-slack"></i></a>	
+							<!-- Heading -->
+							<a href="#" class="active"><span>Slack</span></a>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-3 col-xs-6">
+						<!-- Item -->
+						<div class="ui-item">
+							<!-- Icon -->
+							<a href="#"><i class="fa fa-skype"></i></a>
+							<!-- Heading -->	
+							<a href="#"><span>Skype</span></a>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-3 col-xs-6">
+						<!-- Item -->
+						<div class="ui-item">
+							<!-- Icon -->
+							<a href="#"><i class="fa fa-android"></i></a>
+							<!-- Heading -->	
+							<a href="#"><span>Android</span></a>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-3 col-xs-6">
+						<!-- Item -->
+						<div class="ui-item">
+							<!-- Icon -->
+							<a href="#" class="active"><i class="fa fa-drupal"></i></a>
+							<!-- Heading -->	
+							<a href="#" class="active"><span>Drupal</span></a>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-3 col-xs-6">
+						<!-- Item -->
+						<div class="ui-item">
+							<!-- Icon -->
+							<a href="#"><i class="fa fa-apple"></i></a>	
+							<!-- Heading -->
+							<a href="#"><span>Apple</span></a>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-3 col-xs-6">
+						<!-- Item -->
+						<div class="ui-item">
+							<!-- Icon -->
+							<a href="#"><i class="fa fa-google"></i></a>
+							<!-- Heading -->
+							<a href="#"><span>Google</span></a>		
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-3 col-xs-6">
+						<!-- Item -->
+						<div class="ui-item">
+							<!-- Icon -->
+							<a href="#"><i class="fa fa-joomla"></i></a>
+							<!-- Heading -->
+							<a href="#"><span>Joomla</span></a>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-3 col-xs-6">
+						<!-- Item -->
+						<div class="ui-item">
+							<!-- Icon -->
+							<a href="#"><i class="fa fa-jsfiddle"></i></a>
+							<!-- Heading -->
+							<a href="#"><span>JsFiddle</span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- UI - X Ends -->
+		
+		<!-- Javascript files -->
+		<!-- jQuery -->
+		<script src="js/jquery.js"></script>
+		<!-- Bootstrap JS -->
+		<script src="js/bootstrap.min.js"></script>
+		<!-- Placeholder JS -->
+		<script src="js/placeholder.js"></script>
+		<!-- Respond JS for IE8 -->
+		<script src="js/respond.min.js"></script>
+		<!-- HTML5 Support for IE -->
+		<script src="js/html5shiv.js"></script>
+		
+		<script type="text/javascript">
+			
+			<!-- Background Color of Icon And Color Effect to Heading -->
+			$(document).ready(function(){
+				<!-- Anchor Link Click Event -->
+				$(".ui-item a").click(function(e){				
+					e.preventDefault();				
+					if(!$(this).hasClass("active")){
+						$(this).parents(".ui-item").children("a").addClass("active");
+					}
+					else{
+						$(this).parents(".ui-item").children("a").removeClass("active");				
+					}
+				});
+			});
+		
+		</script>
+	</body>	
+</html>
